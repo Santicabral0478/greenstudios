@@ -567,7 +567,7 @@ textarea {
 .hero {
   padding-block-start: 120px;
   text-align: center;
-  background-color: #000;
+  background-color: #1e1e17;
 }
 
 .hero-content {
@@ -595,6 +595,247 @@ textarea {
 
 .hero-banner .dmodel {
   width: 36rem;
+}
+
+
+/* HERO CONTAINER WORD */
+
+
+.loader-hero {
+  position: relative;
+  width: fit-content;
+  margin-inline: auto;
+  color: rgb(124, 124, 124);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 70px;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+}
+
+.words-hero {
+  overflow: hidden;
+  position: relative;
+  text-align: start;
+  margin-left: 5px;
+}
+
+.words-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#000 10%, transparent 30%, transparent 70%, #000 90%);
+  z-index: 20;
+  transform: scale(1.1);
+}
+
+.word-hero {
+  display: block;
+  height: 100%;
+  padding-left: 6px;
+  color: #6ef786;
+  animation: spin_4991 14s infinite;
+}
+
+@keyframes spin_4991 {
+  10% {
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+
+  25% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  35% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  75% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+
+  85% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+}
+
+
+/* Card hero present */
+.card-present {
+  width: 230px;
+  border-radius: 20px;
+  background: #1b233d;
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-present:hover {
+  transform: scale(1.05);
+}
+
+.card-present .top-section-present {
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, rgb(4 187 112) 0%, rgb(40 151 167) 100%);
+  position: relative;
+}
+
+.card-present .top-section-present .border-present {
+  border-bottom-right-radius: 10px;
+  height: 30px;
+  width: 130px;
+  background: white;
+  background: #1b233d;
+  position: relative;
+  transform: skew(-40deg);
+  box-shadow: -10px -10px 0 0 #1b233d;
+}
+
+.card-present .top-section-present .border-present::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: -15px;
+  background: rgba(255, 255, 255, 0);
+  border-top-left-radius: 10px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.card-present .top-section-present::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.card-present .top-section-present .icons-present {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-present .top-section-present .icons-present .logo-present {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 7px 0 7px 15px;
+}
+
+.card-present .top-section-present .icons-present .logo-present .top-section-present {
+  height: 100%;
+}
+
+.card-present .top-section-present .icons-present .social-media-present {
+  height: 100%;
+  padding: 8px 15px;
+  display: flex;
+  gap: 7px;
+}
+
+.card-present .top-section-present .icons-present .social-media-present .svg-present {
+  height: 100%;
+  fill: #1b233d;
+}
+
+.card-present .top-section-present .icons-present .social-media-present .svg-present:hover {
+  fill: white;
+}
+
+.card-present .bottom-section-present {
+  margin-top: 15px;
+  padding: 10px 5px;
+}
+
+.card-present .bottom-section-present .title-present {
+  display: block;
+  font-size: 17px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.card-present .bottom-section-present .row-present {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card-present .bottom-section-present .row-present .item-present {
+  flex: 30%;
+  text-align: center;
+  padding: 5px;
+  color: rgba(170, 222, 243, 0.721);
+}
+
+.card-present .bottom-section-present .row-present .item-present .big-text-present {
+  font-size: 12px;
+  display: block;
+}
+
+.card-present .bottom-section-present .row-present .item-present .regular-text-present {
+  font-size: 9px;
+}
+
+.card-present .bottom-section-present .row-present .item-present:nth-child(2) {
+  border-left: 1px solid rgba(255, 255, 255, 0.126);
+  border-right: 1px solid rgba(255, 255, 255, 0.126);
+}
+
+.hero-card-decor{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.hero-card-decor-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%)
 }
 
 /*servicios*/
@@ -2040,85 +2281,5 @@ textarea::placeholder, .input-field::placeholder{
 
   .blog-card.grid .h3 {
     font-size: 2.4rem;
-  }
-}
-
-
-.loader-hero {
-  color: rgb(124, 124, 124);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 25px;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 40px;
-  padding: 10px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 8px;
-}
-
-.words-hero {
-  overflow: hidden;
-  position: relative;
-}
-
-.words-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(#000 10%, transparent 30%, transparent 70%, #000 90%);
-  z-index: 20;
-  transform: scale(1.1);
-}
-
-.word-hero {
-  display: block;
-  height: 100%;
-  padding-left: 6px;
-  color: #956afa;
-  animation: spin_4991 14s infinite;
-}
-
-@keyframes spin_4991 {
-  10% {
-    -webkit-transform: translateY(-102%);
-    transform: translateY(-102%);
-  }
-
-  25% {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-
-  35% {
-    -webkit-transform: translateY(-202%);
-    transform: translateY(-202%);
-  }
-
-  50% {
-    -webkit-transform: translateY(-200%);
-    transform: translateY(-200%);
-  }
-
-  60% {
-    -webkit-transform: translateY(-302%);
-    transform: translateY(-302%);
-  }
-
-  75% {
-    -webkit-transform: translateY(-300%);
-    transform: translateY(-300%);
-  }
-
-  85% {
-    -webkit-transform: translateY(-402%);
-    transform: translateY(-402%);
-  }
-
-  100% {
-    -webkit-transform: translateY(-400%);
-    transform: translateY(-400%);
   }
 }
