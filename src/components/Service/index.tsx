@@ -11,35 +11,21 @@ export const Service: FunctionComponent = ()=>{
                 Creamos experiencias en línea que impresionan y funcionan de manera excepcional.
             </p>
     
-            <div className="serv-contenedor">
-    
-                <div className="serv2 serv-article_contenedor">
-                <div className="content-serv cserv2">
-                    <img src="/web.jpg" alt="gif diseño grafico"/>
-                </div>
-                <p className="serv-description"><span><i className="fa-solid fa-check"></i> Diseño y desarrollo web personalizado:</span> Sitios Web únicos y atractivos  </p>
-                </div>
-                <div className="serv3 serv-article_contenedor">
-                <div className="content-serv scerv3">
-                    <img src="/seo.jpg" alt="social ads"/>
-                </div>
-                <p className="serv-description"><span><i className="fa-solid fa-check"></i> Optimización para motores de búsqueda (SEO):</span> Ayuda a mejorar tu visibilidad en línea.</p>
-                </div>
-                <div className="serv4 serv-article_contenedor">
-                <div className="content-serv">
-                    <img src="/ads.jpg" alt=""/>
-                </div>
-                <p className="serv-description"><span><i className="fa-solid fa-check"></i> Campañas efectivas en Google Ads:</span> Diseño y gestión de campañas publicitarias.</p>
-                </div>
-                <div className="serv5 serv-article_contenedor">
-                <div className="content-serv scerv5">
-                    <img src="/soporte.png" alt=""/>
-                </div>
-                <p className="serv-description"><span><i className="fa-solid fa-check"></i> Mantenimiento y actualización:</span> Mantenimiento Constante para mantener la Web actualizada.</p>
-                </div>
-                
             </div>
-    
+
+            <div className="list-service-card">
+                <div className="card service-1">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem impsum dolor sit amet</p>
+
+                    <div className="loader-serv">
+                        <div className="loader-service"></div>
+                        <div className="loader-service"></div>
+                        <div className="loader-service"></div>
+                    </div>
+                </div>
+
+                
             </div>
         </section>
     )

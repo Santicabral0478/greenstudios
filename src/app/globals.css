@@ -68,7 +68,7 @@ html {
 }
 
 body {
-  background-color: #1d1d16;
+  background-color: #000000;
   color: #a7a7a7;
   font-size: 1.6rem;
   line-height: 1.8;
@@ -565,9 +565,11 @@ textarea {
 /*principal*/
 
 .hero {
-  padding-block-start: 120px;
+  padding-block-start: 123px;
   text-align: center;
-  background-color: #1e1e17;
+  background-color: #2a2a2a;
+  margin-inline: 1rem;
+  border-radius: 1rem;
 }
 
 .hero-content {
@@ -630,7 +632,7 @@ textarea {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(#000 10%, transparent 30%, transparent 70%, #000 90%);
+  background: linear-gradient(#2a2a2a 10%, transparent 30%, transparent 70%, #2a2a2a 90%);
   z-index: 20;
   transform: scale(1.1);
 }
@@ -685,172 +687,51 @@ textarea {
   }
 }
 
+/* Loader Hero */ 
 
-/* Card hero present */
-.card-present {
-  width: 230px;
-  border-radius: 20px;
-  background: #1b233d;
-  padding: 5px;
-  overflow: hidden;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
-  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card-present:hover {
-  transform: scale(1.05);
-}
-
-.card-present .top-section-present {
-  height: 150px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(45deg, rgb(4 187 112) 0%, rgb(40 151 167) 100%);
-  position: relative;
-}
-
-.card-present .top-section-present .border-present {
-  border-bottom-right-radius: 10px;
-  height: 30px;
-  width: 130px;
-  background: white;
-  background: #1b233d;
-  position: relative;
-  transform: skew(-40deg);
-  box-shadow: -10px -10px 0 0 #1b233d;
-}
-
-.card-present .top-section-present .border-present::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 0;
-  right: -15px;
-  background: rgba(255, 255, 255, 0);
-  border-top-left-radius: 10px;
-  box-shadow: -5px -5px 0 2px #1b233d;
-}
-
-.card-present .top-section-present::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 0;
-  background: rgba(255, 255, 255, 0);
-  height: 15px;
-  width: 15px;
-  border-top-left-radius: 15px;
-  box-shadow: -5px -5px 0 2px #1b233d;
-}
-
-.card-present .top-section-present .icons-present {
-  position: absolute;
-  top: 0;
+.loader {
+  height: 2px;
   width: 100%;
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-present .top-section-present .icons-present .logo-present {
-  height: 100%;
-  aspect-ratio: 1;
-  padding: 7px 0 7px 15px;
-}
-
-.card-present .top-section-present .icons-present .logo-present .top-section-present {
-  height: 100%;
-}
-
-.card-present .top-section-present .icons-present .social-media-present {
-  height: 100%;
-  padding: 8px 15px;
-  display: flex;
-  gap: 7px;
-}
-
-.card-present .top-section-present .icons-present .social-media-present .svg-present {
-  height: 100%;
-  fill: #1b233d;
-}
-
-.card-present .top-section-present .icons-present .social-media-present .svg-present:hover {
-  fill: white;
-}
-
-.card-present .bottom-section-present {
-  margin-top: 15px;
-  padding: 10px 5px;
-}
-
-.card-present .bottom-section-present .title-present {
-  display: block;
-  font-size: 17px;
-  font-weight: bolder;
-  color: white;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-.card-present .bottom-section-present .row-present {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.card-present .bottom-section-present .row-present .item-present {
-  flex: 30%;
-  text-align: center;
-  padding: 5px;
-  color: rgba(170, 222, 243, 0.721);
-}
-
-.card-present .bottom-section-present .row-present .item-present .big-text-present {
-  font-size: 12px;
-  display: block;
-}
-
-.card-present .bottom-section-present .row-present .item-present .regular-text-present {
-  font-size: 9px;
-}
-
-.card-present .bottom-section-present .row-present .item-present:nth-child(2) {
-  border-left: 1px solid rgba(255, 255, 255, 0.126);
-  border-right: 1px solid rgba(255, 255, 255, 0.126);
-}
-
-.hero-card-decor{
+  background: rgb(44, 44, 44);
   position: relative;
-  width: 100%;
-  height: 50%;
   overflow: hidden;
 }
-
-.hero-card-decor-img{
+.loader .black_overlay {
+  background: linear-gradient(87deg, rgb(42 42 42) 0%, rgba(0, 0, 0, 0.14) 30%, rgba(0, 0, 0, 0.14) 70%, rgb(42 42 42) 100%);
   position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%)
+  inset: 0px;
 }
+.loader .light {
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  left: -20%;
+  top: 0px;
+  background: linear-gradient(
+    87deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(17, 255, 0) 40%,
+    rgb(0, 255, 123) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  animation: light 2s infinite ease-in-out;
+}
+
+@keyframes light {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
 
 /*servicios*/
 
-#service{
-  background-image: url(/fontprin.png);
-  background-size: cover;
-  background-position: center;
-  padding-top: 12rem;
-}
-
 .service {
-  height: 152rem;
+  padding-block: 5rem;
   background-color: #000;
-  margin-bottom: 5rem;
 }
 
 .service .section-text {
@@ -915,6 +796,123 @@ textarea {
   .button-serv-text{
     font-size: 15px;
   }
+
+
+  /* Loader Service */
+
+  .loader-serv{
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    margin-top: 3rem;
+  }
+
+.loader-service {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 160px;
+  height: 100px;
+  margin-left: -80px;
+  margin-top: -50px;
+  border-radius: 5px;
+  background: #1e3f57;
+  animation: dot1_ 10s cubic-bezier(0.55,0.3,0.24,0.99) infinite;
+}
+
+.loader-service:nth-child(2) {
+  z-index: 11;
+  width: 150px;
+  height: 90px;
+  margin-top: -45px;
+  margin-left: -75px;
+  border-radius: 3px;
+  background: #3c517d;
+  animation-name: dot2_;
+}
+
+.loader-service:nth-child(3) {
+  z-index: 12;
+  width: 40px;
+  height: 20px;
+  margin-top: 50px;
+  margin-left: -20px;
+  border-radius: 0 0 5px 5px;
+  background: #6bb2cd;
+  animation-name: dot3_;
+}
+
+@keyframes dot1_ {
+  3%,97% {
+    width: 160px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -80px;
+  }
+
+  30%,36% {
+    width: 80px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -40px;
+  }
+
+  63%,69% {
+    width: 40px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -20px;
+  }
+}
+
+@keyframes dot2_ {
+  3%,97% {
+    height: 90px;
+    width: 150px;
+    margin-left: -75px;
+    margin-top: -45px;
+  }
+
+  30%,36% {
+    width: 70px;
+    height: 96px;
+    margin-left: -35px;
+    margin-top: -48px;
+  }
+
+  63%,69% {
+    width: 32px;
+    height: 60px;
+    margin-left: -16px;
+    margin-top: -30px;
+  }
+}
+
+@keyframes dot3_ {
+  3%,97% {
+    height: 20px;
+    width: 40px;
+    margin-left: -20px;
+    margin-top: 50px;
+  }
+
+  30%,36% {
+    width: 8px;
+    height: 8px;
+    margin-left: -5px;
+    margin-top: 49px;
+    border-radius: 8px;
+  }
+
+  63%,69% {
+    width: 16px;
+    height: 4px;
+    margin-left: -8px;
+    margin-top: -37px;
+    border-radius: 10px;
+  }
+}
 
 /*NOSOTROS*/
 
