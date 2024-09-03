@@ -4,57 +4,85 @@ export const About: FunctionComponent = ()=>{
 
     return(
         
-        <section className="pict-section"  id="nosotros">
-            <div className="container">
-            <div className="fort-text-contenedor">
-                <h2 className="fort-title">Fortalezas</h2>
-                <p className="fort-text">Estos representan solo un vistazo a los beneficios que obtendrás al colaborar con nuestro equipo</p>
-            </div>
-            <div className="parent">
-                <div className="galeria-obj backgimg1 div1">
-                    <div className="contenedor-imagen">
-                        <div className="img-serv-contenedor">
-                        <img className="img-contenedor" src="/paquete.png" alt=""/> <p className="min-titulo">Desarrollo <br/> Web</p>
-                        </div>
-                    <h3 className="titulo-serv">
-                        Entrega rápida y eficiente 
-                    </h3>
-                    </div>
-                </div>
-                <div className="galeria-obj backgimg2 div2">
-                    <div className="contenedor-imagen">
-                    <div className="img-serv-contenedor">
-                        <img className="img-contenedor" src="/personalize.png" alt=""/> <p className="min-titulo">Diseño <br/> Web</p>
-                    </div>
-                    <h3 className="titulo-serv special-atrr">
-                    Enfoque <br/> personalizado 
-                    </h3>
-                </div>
-                </div>
-                <div className="galeria-obj backgimg3 div3">
-                    <div className="contenedor-imagen">
-                    <div className="img-serv-contenedor">
-                        <img className="img-contenedor" src="/precio.png" alt=""/> <p className="min-titulo">Costos <br/> Ofertas</p>
-                    </div>
-                    <h3 className="titulo-serv">
-                    Transparencia <br/> de precios
-                    </h3>                
-                </div>
-                </div>
-                <div className="galeria-obj backgimg4 div4">
-                    <div className="contenedor-imagen">
-                    <div className="img-serv-contenedor">
-                        <img className="img-contenedor" src="/soporte-fort.png" alt=""/> <p className="min-titulo">Soporte <br/> Técnico</p>
-                    </div>
-                    <h3 className="titulo-serv">
-                    Soporte <br/> post-lanzamiento 
-                    </h3>                
-                </div>
-                </div>
-            </div>
-            </div>
 
-        </section>
+        <section className="section feature" id="feature" aria-label="feature">
+        <div className="container">
+
+          <figure className="feature-banner">
+            <img src="/feature-banner.png" width="582" height="585" loading="lazy" alt="feature banner"
+              className="w-100"/>
+          </figure>
+
+          <div className="feature-content">
+
+            <p className="section-subtitle has-before">Why Choose us</p>
+
+            <h2 className="h2 section-title">
+              Specialist in aviding clients of financial <span className="has-before">challenges</span>
+            </h2>
+
+            <ul className="feature-list">
+
+              <li>
+                <div className="feature-card">
+
+                  <div className="card-icon" >
+                    <span aria-hidden="true"></span>
+                  </div>
+
+                  <div>
+                    <h3 className="h3 card-title">Fast working process</h3>
+
+                    <p className="card-text">
+                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div className="feature-card">
+
+                  <div className="card-icon" >
+                    <span aria-hidden="true"></span>
+                  </div>
+
+                  <div>
+                    <h3 className="h3 card-title">Didicated team</h3>
+
+                    <p className="card-text">
+                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div className="feature-card">
+
+                  <div className="card-icon">
+                    <span aria-hidden="true"></span>
+                  </div>
+
+                  <div>
+                    <h3 className="h3 card-title">24/7 hours support</h3>
+
+                    <p className="card-text">
+                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
     )
 }
 

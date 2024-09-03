@@ -1,45 +1,115 @@
-import { FunctionComponent } from "react";
+"use client"
+import Image from "next/image";
+import Link from "next/link";
+import { FunctionComponent, useEffect, useRef, useState } from "react";
 
 export const Header: FunctionComponent = ()=>{
-    return(
-        <header className="header" >
-            <nav className="nav  filter">
-                <div className="logocontainer font6 font1"></div>
+  const [isOcc, setIsOcc] : any = useState("");
+  const [isActive, setIsActive]: any = useState("");
 
-                <div className="nav__menu" id="nav-menu">
+  const scrollTimeout: any = useRef(null);
+  const lastScrollY = useRef(0);
 
-                    <i className="fa-solid fa-xmark" id="nav-close"></i>
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+        setIsOcc("header-occ");
 
-                    <ul className="nav__lista">
-                        <li className="nav__item">
-                            <a href="#home" className="nav__link link__activo">Home</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#service" className="nav__link">Servicios</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#nosotros" className="nav__link">Nosotros</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#proyectos" className="nav__link">Portafolio</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#blog" className="nav__link">Blog</a>
-                        </li>
-                        <div className="nav__item item-cotiza-wha">
-                            <a href="https://api.whatsapp.com/send?phone=+543814131054&text=greenStudios: " className="nav__link">Hablemos <i className="fa-brands fa-whatsapp"></i></a>
-                        </div>
-                        <div className="nav__item item-cotiza">
-                            <a href="#cotiza" className="nav__link btn-primary">COTIZA</a>
-                        </div>
-                    </ul>
 
-                </div>
+      lastScrollY.current = currentScrollY;
 
-                <div className="nav__toggle" id="nav-toggle">
-                    <i className="fa-solid fa-ellipsis-vertical"></i>
-                </div>
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+
+      scrollTimeout.current = setTimeout(() => {
+        setIsOcc("")
+      }, 1000); 
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+    };
+  }, []);
+
+  const handleOnClickActive = ()=>{
+    if(isActive === "active"){
+      document.body.style.overflow = 'auto';
+      setIsActive("")
+      }
+      else {
+        setIsActive("active")
+        document.body.style.overflow = 'hidden';
+      }
+  }
+
+  const handleOnCloseSideNavbar = ()=>{
+    setIsActive("");
+    document.body.style.overflow = 'auto';
+  }
+
+  return(
+        <header className={`header ${isOcc}`} data-header>
+          <div className="container">
+
+            <a href="#" className="logo">Pixology</a>
+
+            <nav className={`navbar ${isActive}`} data-navbar>
+
+              <div className="wrapper">
+                <a href="#" className="logo">Pixology</a>
+
+                <button onClick={()=>{
+                  handleOnCloseSideNavbar()
+                }} className="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
+                </button>
+              </div>
+
+              <ul className="navbar-list">
+
+                <li className="navbar-item">
+                  <a href="#home" className="navbar-link" data-nav-link>Home</a>
+                </li>
+
+                <li className="navbar-item">
+                  <a href="#service" className="navbar-link" data-nav-link>Services</a>
+                </li>
+
+                <li className="navbar-item">
+                  <a href="#feature" className="navbar-link" data-nav-link>Features</a>
+                </li>
+
+                <li className="navbar-item">
+                  <a href="#project" className="navbar-link" data-nav-link>Portfolio</a>
+                </li>
+
+                <li className="navbar-item">
+                  <a href="#blog" className="navbar-link" data-nav-link>Blog</a>
+                </li>
+
+              </ul>
+
             </nav>
+
+            <button onClick={()=>{
+              handleOnClickActive()
+            }} className="nav-open-btn" aria-label="open menu" data-nav-toggler>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L96 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </button>
+
+            <a href="#" className="btn btn-primary has-before has-after">Let’s Talk 👋</a>
+
+            <div onClick={()=>{
+              handleOnCloseSideNavbar()
+            }} className={`overlay ${isActive}`} data-nav-toggler data-overlay></div>
+
+          </div>
         </header>
     )
 }

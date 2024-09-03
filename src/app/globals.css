@@ -340,16 +340,21 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding-block: 25px;
   transition: padding var(--transition-1);
+  transition: all .2s ease-in;
   z-index: 4;
+  background: rgb(228, 228, 228);
+  background: linear-gradient(90deg, rgb(245, 245, 245) 0%, rgba(218, 218, 218, 0.835) 100%);
+  padding-block: 7px;
+  box-shadow: var(--shadow-1);
+  border-bottom: 1px solid #fff;
 }
 
-.header.active {
-  background-color: var(--white);
-  padding-block: 15px;
-  box-shadow: var(--shadow-1);
+.header-occ{
+  opacity: 0;
+  visibility: hidden;
 }
+
 
 .header .container {
   display: flex;
@@ -363,13 +368,13 @@ body {
   font-weight: var(--fw-700);
 }
 
+.nav-open-btn svg {
+  width: 34px;
+  fill: rgb(34, 34, 34);
+}
+
 .nav-open-btn {
-  background-color: var(--white);
-  color: var(--eerie-black);
-  font-size: 35px;
-  padding: 10px;
-  box-shadow: var(--shadow-2);
-  border-radius: var(--radius-10);
+  padding: 7px;
 }
 
 .navbar {
@@ -403,9 +408,9 @@ body {
 
 .navbar .logo { color: var(--white); }
 
-.nav-close-btn {
-  color: var(--white);
-  font-size: 30px;
+.nav-close-btn svg {
+  fill: var(--white);
+  width: 30px;
   transition: var(--transition-1);
 }
 
@@ -450,7 +455,7 @@ body {
 
 .hero .container {
   display: grid;
-  gap: 70px;
+  gap: 1px;
 }
 
 .hero-text {

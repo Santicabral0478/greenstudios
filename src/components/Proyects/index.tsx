@@ -3,61 +3,140 @@ import { FunctionComponent } from "react"
 export const Proyects: FunctionComponent = ()=>{
 
     return(
-        <section className="proyectos" id="proyectos">
+        <section className="section project" id="project" aria-label="project">
+        <div className="container">
 
-            <div className="container">
-                <div className="proyect-contenedor">
-                    <div className="proy-inf-contenedor">
-                        <p className="subtitle-proyect">
-                        Proyectos
-                        </p>
-                        <h4 className="title-proyect"> 
-                        Algunos proyectos
-                        </h4>
-                        <p className="proyect-descrip">
-                        Explora algunos proyectos que capturan nuestro potencial y estilo 
-                        </p>
-            
-                        <a href="https://api.whatsapp.com/send?phone=+543814131054&text=Quiero cotizar un proyecto: " className="button-proyect">Cotizar un proyecto</a>
-                        <a href="#cotiza" className="button-proyect">Consultar planes</a>
-                    </div>
-                    <div className="proy-contenedor">
-                        <a target="_blank" href="https://inmopluss.000webhostapp.com/" className="item-proy1 proyect1 proy-item">
-                        <div className="img-proy-contenedor">
-                            <img src="/inmoplus.png" alt=""/>
-                        </div>
-                        <div className="proy-descripcion-contenedor">
-                            <p className="img-proy-descripcion">Inmo Plus</p>
-                        </div>
-                        </a>
-                        <a target="_blank" href="https://lineapalermo.000webhostapp.com/index.html" className="item-proy2 proyect2 proy-item">
-                        <div className="img-proy-contenedor">
-                            <img src="/palermo.png" alt=""/>
-                        </div>
-                        <div className="proy-descripcion-contenedor">
-                            <p className="img-proy-descripcion">Linea Palermo</p>
-                        </div>
-                        </a>
-                        <a target="_blank" href="https://weidymark.000webhostapp.com/index.html" className="item-proy3 proyect3 proy-item">
-                        <div className="img-proy-contenedor">
-                            <img src="/weidy.png" alt=""/>
-                        </div>
-                        <div className="proy-descripcion-contenedor">
-                            <p className="img-proy-descripcion">Widy Marketing</p>
-                        </div>
-                        </a>
-                        <a target="_blank" href="https://aptraducciones.000webhostapp.com/" className="item-proy4 proyect4 proy-item">
-                        <div className="img-proy-contenedor">
-                            <img src="/aptraducciones.png" alt=""/>
-                        </div>
-                        <div className="proy-descripcion-contenedor">
-                            <p className="img-proy-descripcion">AP Traducciones</p>
-                        </div>
-                        </a>
-                    </div>
+          <p className="section-subtitle has-before text-center">Projects</p>
+
+          <h2 className="h2 section-title text-center">
+            Pixology complete <span className="has-before">project</span>
+          </h2>
+
+          <ul className="filter-list">
+
+            <li>
+              <button className="filter-btn active" data-filter-btn>Website</button>
+            </li>
+
+            <li>
+              <button className="filter-btn" data-filter-btn>Landing Page</button>
+            </li>
+
+            <li>
+              <button className="filter-btn" data-filter-btn>iOS App</button>
+            </li>
+
+            <li>
+              <button className="filter-btn" data-filter-btn>Landing Page</button>
+            </li>
+
+            <li>
+              <button className="filter-btn" data-filter-btn>Branding Design</button>
+            </li>
+
+          </ul>
+
+          <ul className="grid-list">
+
+            <li>
+              <div className="project-card">
+
+                <figure className="card-banner img-holder" >
+                  <img src="/project-1.jpg" width="835" height="429" loading="lazy" alt="Book art design"
+                    className="img-cover"/>
+                </figure>
+
+                <div className="card-content">
+                  <h3 className="h3">
+                    <a href="#" className="card-title">Book art design</a>
+                  </h3>
+
+                  <a href="#" className="card-tag">Branding</a>
                 </div>
-            </div>
-        </section>
+
+              </div>
+            </li>
+
+            <li>
+              <div className="project-card">
+
+                <figure className="card-banner img-holder">
+                  <img src="/project-2.jpg" width="416" height="429" loading="lazy" alt="Graphic Design"
+                    className="img-cover"/>
+                </figure>
+
+                <div className="card-content">
+                  <h3 className="h3">
+                    <a href="#" className="card-title">Graphic Design</a>
+                  </h3>
+
+                  <a href="#" className="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div className="project-card">
+
+                <figure className="card-banner img-holder">
+                  <img src="/project-3.jpg" width="416" height="429" loading="lazy" alt="3d Digital Art"
+                    className="img-cover"/>
+                </figure>
+
+                <div className="card-content">
+                  <h3 className="h3">
+                    <a href="#" className="card-title">3d Digital Art</a>
+                  </h3>
+
+                  <a href="#" className="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div className="project-card">
+
+                <figure className="card-banner img-holder">
+                  <img src="/project-4.jpg" width="416" height="429" loading="lazy" alt="Web Design"
+                    className="img-cover"/>
+                </figure>
+
+                <div className="card-content">
+                  <h3 className="h3">
+                    <a href="#" className="card-title">Web Design</a>
+                  </h3>
+
+                  <a href="#" className="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div className="project-card">
+
+                <figure className="card-banner img-holder" >
+                  <img src="/project-5.jpg" width="416" height="429" loading="lazy"
+                    alt="Mobile App Design" className="img-cover"/>
+                </figure>
+
+                <div className="card-content">
+                  <h3 className="h3">
+                    <a href="#" className="card-title">Mobile App Design</a>
+                  </h3>
+
+                  <a href="#" className="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
     )
 }
 

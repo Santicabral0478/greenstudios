@@ -2,211 +2,141 @@ import { FunctionComponent } from "react";
 
 export const Quote: FunctionComponent = ()=>{
     return(
-        <section  id="cotiza" className="seccion productos" >
-
+      <section className="section blog" id="blog" aria-label="blog">
         <div className="container">
-  
-          <div className="titulo-productos">
-            <h2 className="h2 productos-titulo spangradient-title">Paquetes</h2>
-          </div>
-  
-          <ul className="horizontal">
-  
-            <li className="deslizable ">
-              <article className="card__article artcotiz1">
-  
-                <div className="separador-gradient"><img src="/profesionalpage.png" alt="" className="plantheme"/></div>
-    
-                <div className="card__data">
-                   <h2 className="card__title">Paquete de Inicio</h2>
-                   
-                   <p className="card__description">
-                    Ideal para: pequeñas empresas, profesionales independientes, Instituciones Educativas o Culturales  
-                   </p>
-                   
-                   <a href="sects/blog/blogItem/Item-cotiza-inicio/index.html" className="item-cotiza-button">Ver Más <i className="fa-regular fa-eye"></i></a>
-  
-                    
-                </div>
-                <div className="list-items">
-                  <ul className="list-items-cotiza">
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Soporte técnico</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> 15 imágenes (galería)</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Botón a redes sociales</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Dominio .com.ar</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Web hosting Premium</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> 4 Secciones</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Diseño web 100% responsive</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Botón a WhatsApp</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Formulario de Contacto</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Mapa de ubicación</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Optimizado para navegadores</p>
-                    </li>
-  
-                  </ul>
-                </div>
-             </article>
-            </li>
-  
-            <li className="deslizable ">
-              <article className="card__article artcotiz2">
-  
-                <div className="separador-gradient"> <img src="/profesionalpage.png" alt="" className="plantheme"/></div>
-    
-                <div className="card__data">
-                   <h2 className="card__title">Paquete Standard</h2>
-                   
-                   <p className="card__description">
-                    Ideal para: Empresas de servicios, artistas visuales, profesionales con servicios, centros de salud, negocios de hospedaje.
+
+          <p className="section-subtitle text-center has-before">Blog Post</p>
+
+          <h2 className="h2 section-title text-center">
+            Popular <span className="has-before">blog post</span>
+          </h2>
+
+          <ul className="blog-list">
+
+            <li>
+              <div className="blog-card large">
+
+                <figure className="card-banner">
+                  <img src="/blog-1.jpg" width="644" height="363" loading="lazy"
+                    alt="Godaddy user flow solution..." className="img-cover"/>
+                </figure>
+
+                <div className="card-content">
+
+                  <div className="wrapper">
+                    <a href="#" className="tag">Development</a>
+
+                    <a href="#" className="publish-date">
+                      <span aria-hidden="true"></span>
+
+                      <span className="span">July 22, 2022</span>
+                    </a>
+                  </div>
+
+                  <h3>
+                    <a href="#" className="card-title">Godaddy user flow solution...</a>
+                  </h3>
+
+                  <p className="card-text">
+                    At Pixology we specialize in designing, building, shipping and scaling beautifu. At Pixology we
+                    specialize in designing,
+                    building, shipping and scaling beautiful.
                   </p>
-                   
-  
-                   <a href="sects/blog/blogItem/Item-cotiza-stand/index.html" className="item-cotiza-button">Ver Más <i className="fa-regular fa-eye"></i></a>
-  
-                    
+
                 </div>
-                <div className="list-items">
-                  <ul className="list-items-cotiza">
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Soporte técnico</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> 30 imágenes (galería)</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Botón a redes sociales</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Dominio .com.ar</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Web hosting Premium</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> 5 Secciones</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Diseño web 100% responsive</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Botón a WhatsApp</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Mapa de ubicación</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> 5 servicios</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> 20 productos (no es tienda)</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Formulario de Contacto</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Optimizado para navegadores</p>
-                    </li>
-  
-                  </ul>
-                </div>
-             </article>
+
+              </div>
             </li>
-  
-            <li className="deslizable ">
-              <article className="card__article artcotiz3">
-  
-                <div className="separador-gradient"> <img src="/profesionalpage.png" alt="" className="plantheme"/></div>
-    
-                <div className="card__data">
-                   <h2 className="card__title">Paquete Premium</h2>
-                   
-                   <p className="card__description">
-                    Ideal para: Negocios corporativos, agencias creativas o de marketing, Plataformas de Información, Empresas de Turismo.  
-                   
-                  </p>
-                   
-  
-                   <a href="sects/blog/blogItem/Item-cotiza-premi/index.html" className="item-cotiza-button">Ver Más <i className="fa-regular fa-eye"></i></a>
-  
-                    
+
+            <li>
+              <div className="blog-card">
+
+                <figure className="card-banner">
+                  <img src="/blog-2.jpg" width="202" height="162" loading="lazy"
+                    alt="Godaddy user flow solution for every individual" className="img-cover"/>
+                </figure>
+
+                <div className="card-content">
+
+                  <div className="wrapper">
+                    <a href="#" className="tag">Development</a>
+
+                    <a href="#" className="publish-date">
+                      <span aria-hidden="true"></span>
+
+                      <span className="span">July 21, 2020</span>
+                    </a>
+                  </div>
+
+                  <h3 className="h3">
+                    <a href="#" className="card-title">Godaddy user flow solution for every individual</a>
+                  </h3>
+
                 </div>
-                <div className="list-items">
-                  <ul className="list-items-cotiza">
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Soporte técnico </p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> 50 imágenes (galería)</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Botón a redes sociales</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Dominio .com.ar</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Web hosting Premium</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> 10 Secciones</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Diseño web 100% responsive</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Botón a WhatsApp</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Mapa de ubicación</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> 15 servicios</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> 50 productos (no es tienda)</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Formulario de Contacto</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Optimizado para navegadores</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Sección (preguntas frecuentes)</p>
-                    </li>
-                    <li>
-                      <p className="item-cotiza-card"><i className="fa-solid fa-check"></i> Integración de Blog</p>
-                    </li>
-  
-                  </ul>
-                </div>
-  
-             </article>
+
+              </div>
             </li>
-  
+
+            <li>
+              <div className="blog-card">
+
+                <figure className="card-banner">
+                  <img src="/blog-3.png" width="202" height="162" loading="lazy"
+                    alt="Business solution for every individual" className="img-cover"/>
+                </figure>
+
+                <div className="card-content">
+
+                  <div className="wrapper">
+                    <a href="#" className="tag">Development</a>
+
+                    <a href="#" className="publish-date">
+                      <span aria-hidden="true"></span>
+
+                      <span className="span">July 21, 2020</span>
+                    </a>
+                  </div>
+
+                  <h3 className="h3">
+                    <a href="#" className="card-title">Business solution for every individual</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div className="blog-card">
+
+                <figure className="card-banner">
+                  <img src="/blog-4.png" width="202" height="162" loading="lazy"
+                    alt="How to gain pro experience ar figma update version" className="img-cover"/>
+                </figure>
+
+                <div className="card-content">
+
+                  <div className="wrapper">
+                    <a href="#" className="tag">Development</a>
+
+                    <a href="#" className="publish-date">
+                      <span aria-hidden="true"></span>
+
+                      <span className="span">July 21, 2020</span>
+                    </a>
+                  </div>
+
+                  <h3 className="h3">
+                    <a href="#" className="card-title">How to gain pro experience ar figma update version</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
           </ul>
-  
+
         </div>
       </section>
     )

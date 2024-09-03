@@ -4,36 +4,64 @@ import { FunctionComponent } from "react";
 export const Hero: FunctionComponent = ()=>{
     return(
         <>
-        <section className="section hero" id="home" >
+      <section className="section hero" id="home" aria-label="hero">
         <div className="container">
-  
+
           <div className="hero-content">
-  
-            <p className="hero-subtitle">Green Studios Marketing</p>
-  
-              <div className="loader-hero">
-                <p>loading</p>
-                <div className="words-hero">
-                  <span className="word-hero">buttons</span>
-                  <span className="word-hero">forms</span>
-                  <span className="word-hero">switches</span>
-                  <span className="word-hero">cards</span>
-                  <span className="word-hero">buttons</span>
-                </div>
-              </div>
-  
+
+            <h1 className="h1 hero-title">
+              Building Digital <span className="has-before">Product</span>, Brand and Experience
+            </h1>
+
             <p className="hero-text">
-              Somos Green Studios, nuestro deber es brindarte un servicio único 
-              en cuanto a publicidad digital y desarrollo web refiere. Queremos 
-              que tu empresa forme parte de la revolución. Haz que el mundo te conozca Hoy.
+              At Pixology we specialize in designing, building, shipping and scaling beautiful, usable products with
+              blazing-fast
+              efficiency
             </p>
 
+            <div className="wrapper">
+              <a href="#" className="btn btn-primary has-before has-after">How It Works</a>
+
+              <button className="hero-btn" aria-label="pixology promo">
+                <span aria-hidden="true"></span>
+
+                <span className="span">Behind the scenes</span>
+              </button>
+            </div>
+
+            <ul className="social-list">
+
+              <li>
+                <a href="#" className="social-link">
+                  <span></span>
+
+                  <span className="span">Facebook</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="social-link">
+                  <span></span>
+
+                  <span className="span">Youtube</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="social-link">
+                  <span ></span>
+
+                  <span className="span">Twitter</span>
+                </a>
+              </li>
+
+            </ul>
+
           </div>
 
-          <div className="loader">
-            <div className="light"></div>
-            <div className="black_overlay"></div>
-          </div>
+          <figure className="hero-banner">
+            <img src="/hero-banner.png" width="794" height="637" alt="hero banner" className="w-100"/>
+          </figure>
 
         </div>
       </section>
