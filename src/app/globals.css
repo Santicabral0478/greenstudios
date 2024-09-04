@@ -1190,8 +1190,6 @@ body {
    * HEADER
    */
 
-  .header { padding-block-start: 47px; }
-
   .nav-open-btn,
   .overlay,
   .navbar .wrapper { display: none; }
