@@ -348,6 +348,7 @@ body {
   padding-block: 7px;
   box-shadow: var(--shadow-1);
   border-bottom: 1px solid #fff;
+  z-index: 99;
 }
 
 .header-occ{
@@ -451,7 +452,9 @@ body {
   #HERO
 \*-----------------------------------*/
 
-.hero { padding-block-start: calc(var(--section-padding) + 60px); }
+.hero {
+  padding-block-start: calc(var(--section-padding) + 3rem);
+}
 
 .hero .container {
   display: grid;
@@ -471,7 +474,7 @@ body {
 .hero-content .wrapper {
   flex-wrap: wrap;
   gap: 30px;
-  margin-block-end: 30px;
+  margin-block-end: 10px;
 }
 
 .hero-btn {
@@ -517,7 +520,9 @@ body {
 
 .service { background-color: var(--ghost-white); }
 
-.service .section-title { margin-block: 30px 60px; }
+.service .section-title {
+  margin-block: 15px;
+}
 
 .service-card,
 .service .link-card {
@@ -578,6 +583,539 @@ body {
 
 
 
+.container-serv{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-serv-container{
+  width: 100%;
+}
+
+.left-serv-container ul {
+  width: 100%;
+  position: relative;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-li-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 25rem;
+  position: absolute;
+  top: 0;
+  transition: all .4s ease-in;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.list-li-container-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* 
+  LOADER 1
+*/
+
+.loader-list-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 160px;
+  height: 100px;
+  margin-left: -80px;
+  margin-top: -50px;
+  border-radius: 5px;
+  background: #1e3f57;
+  animation: dot1_ 7s cubic-bezier(0.55,0.3,0.24,0.99) infinite;
+}
+
+.loader-list-1:nth-child(2) {
+  z-index: 11;
+  width: 150px;
+  height: 90px;
+  margin-top: -45px;
+  margin-left: -75px;
+  border-radius: 3px;
+  background: #3c517d;
+  animation-name: dot2_;
+}
+
+.loader-list-1:nth-child(3) {
+  z-index: 12;
+  width: 40px;
+  height: 20px;
+  margin-top: 50px;
+  margin-left: -20px;
+  border-radius: 0 0 5px 5px;
+  background: #6bb2cd;
+  animation-name: dot3_;
+}
+
+@keyframes dot1_ {
+  3%,97% {
+    width: 160px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -80px;
+  }
+
+  30%,36% {
+    width: 80px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -40px;
+  }
+
+  63%,69% {
+    width: 40px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -20px;
+  }
+}
+
+@keyframes dot2_ {
+  3%,97% {
+    height: 90px;
+    width: 150px;
+    margin-left: -75px;
+    margin-top: -45px;
+  }
+
+  30%,36% {
+    width: 70px;
+    height: 96px;
+    margin-left: -35px;
+    margin-top: -48px;
+  }
+
+  63%,69% {
+    width: 32px;
+    height: 60px;
+    margin-left: -16px;
+    margin-top: -30px;
+  }
+}
+
+@keyframes dot3_ {
+  3%,97% {
+    height: 20px;
+    width: 40px;
+    margin-left: -20px;
+    margin-top: 50px;
+  }
+
+  30%,36% {
+    width: 8px;
+    height: 8px;
+    margin-left: -5px;
+    margin-top: 49px;
+    border-radius: 8px;
+  }
+
+  63%,69% {
+    width: 16px;
+    height: 4px;
+    margin-left: -8px;
+    margin-top: -37px;
+    border-radius: 10px;
+  }
+}
+
+/* 
+LOADER 2
+*/
+
+.phone-list-2 {
+  --screen-clr: #0d85aa;
+  --border-clr: #29536d;
+  --loader-clr: #CCE3DE;
+  background-color: var(--screen-clr);
+  height: 13rem;
+  aspect-ratio: 10/16;
+  border-radius: .5rem;
+  border: 5px solid var(--border-clr);
+  border-top: 10px solid var(--border-clr);
+  border-bottom: 10px solid var(--border-clr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  animation: shake .5s infinite linear;
+  position: relative;
+}
+
+.phone-list-2::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1rem;
+  height: 5px;
+  background-color: var(--loader-clr);
+  border-radius: .5rem;
+}
+
+.loader-list-2 {
+  border: 10px dashed var(--loader-clr);
+  width: 2rem;
+  height: 2rem;
+  padding: 1.7rem;
+  border-radius: 50%;
+  animation: loading 2s infinite ease-in-out;
+}
+
+.text-list-2 {
+  color: var(--loader-clr);
+}
+
+@keyframes loading {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes shake {
+  0% {
+    rotate: 0deg;
+  }
+
+  10% {
+    rotate: .5deg;
+  }
+
+  20% {
+    rotate: 0deg;
+  }
+
+  30% {
+    rotate: -.5deg;
+  }
+
+  50% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 0deg;
+  }
+}
+
+/* 
+LOADER 3
+*/
+
+.modelViewPort-list-3 {
+  perspective: 1000px;
+  width: 20rem;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #282828;
+}
+
+.eva-list-3 {
+  --EVA-ROTATION-DURATION: 4s;
+  transform-style: preserve-3d;
+  animation: rotateRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+}
+.head-list-3 {
+  position: relative;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 48% 53% 45% 55% / 79% 79% 20% 22%;
+  background: linear-gradient(to right, white 45%, gray);
+}
+.eyeChamber-list-3 {
+  width: 4.5rem;
+  height: 2.75rem;
+  position: relative;
+  left: 50%;
+  top: 55%;
+  border-radius: 45% 53% 45% 48% / 62% 59% 35% 34%;
+  background-color: #0c203c;
+  box-shadow: 0px 0px 2px 2px white, inset 0px 0px 0px 2px black;
+  transform: translate(-50%, -50%);
+  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+}
+.eye-list-3 {
+  width: 1.2rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.eye-list-3:first-child {
+  left: 8px;
+  top: 50%;
+  background: repeating-linear-gradient(
+    65deg,
+    #9bdaeb 0px,
+    #9bdaeb 1px,
+    white 2px
+  );
+  box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+  transform: translate(0, -50%) rotate(-65deg);
+}
+.eye-list-3:nth-child(2) {
+  right: 8px;
+  top: 50%;
+  background: repeating-linear-gradient(
+    -65deg,
+    #9bdaeb 0px,
+    #9bdaeb 1px,
+    white 2px
+  );
+  box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+  transform: translate(0, -50%) rotate(65deg);
+}
+.body-list-3 {
+  width: 6rem;
+  height: 8rem;
+  position: relative;
+  margin-block-start: 0.25rem;
+  border-radius: 47% 53% 45% 55% / 12% 9% 90% 88%;
+  background: linear-gradient(to right, white 35%, gray);
+}
+.hand-list-3 {
+  position: absolute;
+  left: -1.5rem;
+  top: 0.75rem;
+  width: 2rem;
+  height: 5.5rem;
+  border-radius: 40%;
+  background: linear-gradient(to left, white 15%, gray);
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);
+  transform: rotateY(55deg) rotateZ(10deg);
+}
+.hand-list-3:first-child {
+  animation: compensateRotation var(--EVA-ROTATION-DURATION) linear infinite
+    alternate;
+}
+.hand-list-3:nth-child(2) {
+  left: 92%;
+  background: linear-gradient(to right, white 15%, gray);
+  transform: rotateY(55deg) rotateZ(-10deg);
+  animation: compensateRotationRight var(--EVA-ROTATION-DURATION) linear
+    infinite alternate;
+}
+.scannerThing-list-3 {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  border-top: 180px solid #9bdaeb;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  transform-origin: top left;
+  mask: linear-gradient(to right, white, transparent 35%);
+  animation: glow 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+.scannerOrigin-list-3 {
+  position: absolute;
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  left: 60%;
+  top: 10%;
+  background: #9bdaeb;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite;
+}
+@keyframes rotateRight {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(25deg);
+  }
+}
+@keyframes moveRight {
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-40%, -50%);
+  }
+}
+@keyframes compensateRotation {
+  from {
+    transform: rotateY(55deg) rotateZ(10deg);
+  }
+  to {
+    transform: rotatey(30deg) rotateZ(10deg);
+  }
+}
+@keyframes compensateRotationRight {
+  from {
+    transform: rotateY(55deg) rotateZ(-10deg);
+  }
+  to {
+    transform: rotateY(70deg) rotateZ(-10deg);
+  }
+}
+@keyframes glow {
+  from {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  45% {
+    transform: rotate(-25deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/*
+  LOADER 4
+*/
+
+/* From Uiverse.io by vikas7754 */ 
+@keyframes blinkCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typeAndDelete {
+  0%,
+  10% {
+    width: 0;
+  }
+
+  45%,
+  55% {
+    width: 20rem;
+  }
+
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+.terminal-loader {
+  width: 300px;
+  height: 200px;
+  background: #1c1c1c;
+  border: 1px solid #ffffff3e;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.terminal-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #343434;
+  padding: 6px;
+}
+
+.terminal-controls {
+  position: absolute;
+  left: 10px;
+  display: flex;
+  gap: 7px;
+}
+
+.control {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #777;
+}
+
+.control.close {
+  background-color: #e33;
+}
+
+.control.minimize {
+  background-color: #ee0;
+}
+
+.control.maximize {
+  background-color: #0b0;
+}
+
+.terminal-title {
+  color: #eeeeeec1;
+}
+
+.content {
+  padding: 10px;
+}
+.text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid green;
+  animation: typeAndDelete 4s steps(11) infinite,
+    blinkCursor 0.5s step-end infinite alternate;
+  color: rgb(0, 196, 0);
+  font-weight: 600;
+}
+
+
+/*
+  TEXT CONFIGURATON
+*/
+
+.right-serv-container{
+  width: 100%;
+}
+
+.list-serv-items-cont{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.serv-items{
+  transition: all .3s ease-in;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.span-serv{
+  font-size: 18px;
+}
+
+.p-serv-item{
+  display: none;
+}
+
+.p-serv-item-active{
+  display: block;
+}
 
 
 /*-----------------------------------*\
