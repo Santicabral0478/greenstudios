@@ -4,7 +4,7 @@ export const Proyects: FunctionComponent = ()=>{
 
     return(
         <section className="section project" id="project" aria-label="project">
-        <div className="container">
+        <div className="container project-section">
 
           <p className="section-subtitle has-before text-center">Projects</p>
 
