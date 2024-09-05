@@ -149,6 +149,7 @@ body {
   color: var(--slate-gray);
   font-size: 1.6rem;
   line-height: 1.75;
+  hoverflow-x: hidden;  
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -539,8 +540,6 @@ body {
   transition: var(--transition-1);
 }
 
-.service-card:is(:hover, :focus-within) { border-color: hsl(var(--color)); }
-
 .service-card .card-icon {
   max-width: max-content;
   padding: 15px;
@@ -611,11 +610,13 @@ body {
   position: absolute;
   top: 0;
   transition: all .4s ease-in;
+  display: none;
   opacity: 0;
   visibility: hidden;
 }
 
 .list-li-container-active{
+  display: flex;
   visibility: visible;
   opacity: 1;
 }
@@ -635,7 +636,8 @@ body {
   margin-left: -80px;
   margin-top: -50px;
   border-radius: 5px;
-  background: #1e3f57;
+  background: #c5c5c5;
+  border: 1ps solid #a3a3a3;
   animation: dot1_ 7s cubic-bezier(0.55,0.3,0.24,0.99) infinite;
 }
 
@@ -646,7 +648,7 @@ body {
   margin-top: -45px;
   margin-left: -75px;
   border-radius: 3px;
-  background: #3c517d;
+  background: #1d1d1d;
   animation-name: dot2_;
 }
 
@@ -657,7 +659,7 @@ body {
   margin-top: 50px;
   margin-left: -20px;
   border-radius: 0 0 5px 5px;
-  background: #6bb2cd;
+  background: #747474;
   animation-name: dot3_;
 }
 
@@ -1236,21 +1238,21 @@ LOADER 3
 
 
 /*-----------------------------------*\
-  #NEWSLETTER
+  # CONTACT FORM
 \*-----------------------------------*/
 
-.newsletter { color: var(--white); }
+.contact-form-cont { color: var(--white); }
 
-.newsletter .container {
+.contact-form-cont .container {
   display: grid;
   gap: 50px;
 }
 
-.newsletter-banner { max-width: max-content; }
+.contact-form-cont-banner { max-width: max-content; }
 
-.newsletter .section-subtitle { color: var(--light-gray); }
+.contact-form-cont .section-subtitle { color: var(--light-gray); }
 
-.newsletter .section-title {
+.contact-form-cont .section-title {
   color: var(--white);
   margin-block: 20px 35px;
 }
@@ -1273,7 +1275,92 @@ LOADER 3
 
 .email-field::placeholder { color: inherit; }
 
+/* Pattern Background */ 
+.pattern-element {
+  width: 100%;
+  height: 100%;
+  --s: 150px;
+  --c1: #432295;
+  --c2: #3e1f8c;
+  --c3: #46249c;
+  --c4: #472896;
 
+  background: conic-gradient(
+      from 45deg at 75% 75%,
+      var(--c3) 90deg,
+      var(--c1) 0 180deg,
+      #0000 0
+    ),
+    conic-gradient(from -45deg at 25% 25%, var(--c3) 90deg, #0000 0),
+    conic-gradient(from -45deg at 50% 100%, #0000 180deg, var(--c3) 0),
+    conic-gradient(
+      from -45deg,
+      var(--c1) 90deg,
+      var(--c2) 0 225deg,
+      var(--c4) 0
+    );
+  background-size: var(--s) var(--s);
+}
+
+
+
+/* Form */ 
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.745);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 15px 25px;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+}
+    
 
 
 
@@ -1642,25 +1729,15 @@ LOADER 3
 
   .feature-card .card-text { max-width: 32ch; }
 
-
-
   /**
-   * PROJECT
+   * CONTACT-FORM-CONT
    */
 
-  .project .grid-list > li:first-child { grid-column: 1 / 3; }
-
-
-
-  /**
-   * NEWSLETTER
-   */
-
-  .newsletter-form { position: relative; }
+  .contact-form-cont-form { position: relative; }
 
   .email-field { margin-block-end: 0; }
 
-  .newsletter-form .btn-secondary {
+  .contact-form-cont-form .btn-secondary {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -1819,17 +1896,32 @@ LOADER 3
   }
 
 
+  .container-serv{
+    margin-top: 5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-serv-container ul {
+    width: 40%;
+  }
+
+  .left-serv-container {
+    width: 40%;
+}
+
 
   /**
-   * NEWSLETTER
+   * CONTACT-FORM-CONT
    */
 
-  .newsletter .container {
+  .contact-form-cont .container {
     grid-template-columns: 1fr 0.8fr;
     align-items: center;
   }
 
-  .newsletter-banner {
+  .contact-form-cont-banner {
     order: 1;
     margin-inline-start: auto;
   }
@@ -1839,7 +1931,7 @@ LOADER 3
     padding-inline: 40px;
   }
 
-  .newsletter-form .btn-secondary {
+  .contact-form-cont-form .btn-secondary {
     top: 10px;
     right: 10px;
     bottom: 10px;
@@ -1968,7 +2060,7 @@ LOADER 3
    * SERVICE
    */
 
-  .service .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .service .grid-list { grid-template-columns: repeat(2, 1fr); }
 
   .service-card .h3 { --fs-3: 2rem; }
 

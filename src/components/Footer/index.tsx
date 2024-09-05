@@ -98,7 +98,7 @@ export const Footer: FunctionComponent = ()=>{
             </li>
   
             <li>
-              <a href="#" className="footer-link">Newsletters</a>
+              <a href="#" className="footer-link">Contact-form-conts</a>
             </li>
   
           </ul>
