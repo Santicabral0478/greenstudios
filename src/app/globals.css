@@ -1674,7 +1674,9 @@ LOADER 3
 
   .btn { height: 60px; }
 
-  .grid-list { grid-template-columns: 1fr 1fr; }
+  .grid-list, .project-section ul { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
 
 
 
@@ -1803,7 +1805,7 @@ LOADER 3
 
   .btn { height: 70px; }
 
-  .grid-list { grid-template-columns: repeat(3, 1fr); }
+  .grid-list, .project-section ul { grid-template-columns: repeat(3, 1fr); }
 
 
 
