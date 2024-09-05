@@ -5,6 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import Hero from "@/components/Hero";
 import Proyects from "@/components/Proyects";
 import Quote from "@/components/Quote";
+import Reviews from "@/components/Reviews";
 import { Service } from "@/components/Service";
 import Image from "next/image";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero/>
       <Service/>
       <About/>
+      <Reviews/>
       <Proyects/>
       <AboutTwo/>
     </>

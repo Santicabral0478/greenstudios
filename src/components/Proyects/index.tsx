@@ -25,64 +25,7 @@ export const Proyects: FunctionComponent = ()=>{
 
                 <div className="card-content">
                   <h3 className="h3">
-                    <a href="#" className="card-title">Graphic Design</a>
-                  </h3>
-
-                  <a href="#" className="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div className="project-card">
-
-                <figure className="card-banner img-holder">
-                  <img src="/project-3.jpg" width="416" height="429" loading="lazy" alt="3d Digital Art"
-                    className="img-cover"/>
-                </figure>
-
-                <div className="card-content">
-                  <h3 className="h3">
-                    <a href="#" className="card-title">3d Digital Art</a>
-                  </h3>
-
-                  <a href="#" className="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div className="project-card">
-
-                <figure className="card-banner img-holder">
-                  <img src="/project-4.jpg" width="416" height="429" loading="lazy" alt="Web Design"
-                    className="img-cover"/>
-                </figure>
-
-                <div className="card-content">
-                  <h3 className="h3">
-                    <a href="#" className="card-title">Web Design</a>
-                  </h3>
-
-                  <a href="#" className="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div className="project-card">
-
-                <figure className="card-banner img-holder" >
-                  <img src="/project-5.jpg" width="416" height="429" loading="lazy"
-                    alt="Mobile App Design" className="img-cover"/>
-                </figure>
-
-                <div className="card-content">
-                  <h3 className="h3">
-                    <a href="#" className="card-title">Mobile App Design</a>
+                    <span className="card-title">Graphic Design</span>
                   </h3>
 
                   <a href="#" className="card-tag">Design</a>
@@ -101,7 +44,7 @@ export const Proyects: FunctionComponent = ()=>{
 
                 <div className="card-content">
                   <h3 className="h3">
-                    <a href="#" className="card-title">Graphic Design</a>
+                    <span className="card-title">Graphic Design</span>
                   </h3>
 
                   <a href="#" className="card-tag">Design</a>
@@ -114,13 +57,13 @@ export const Proyects: FunctionComponent = ()=>{
               <div className="project-card">
 
                 <figure className="card-banner img-holder">
-                  <img src="/project-3.jpg" width="416" height="429" loading="lazy" alt="3d Digital Art"
+                  <img src="/project-2.jpg" width="416" height="429" loading="lazy" alt="Graphic Design"
                     className="img-cover"/>
                 </figure>
 
                 <div className="card-content">
                   <h3 className="h3">
-                    <a href="#" className="card-title">3d Digital Art</a>
+                    <span className="card-title">Graphic Design</span>
                   </h3>
 
                   <a href="#" className="card-tag">Design</a>
@@ -129,57 +72,36 @@ export const Proyects: FunctionComponent = ()=>{
               </div>
             </li>
 
-            
+                        <li>
+              <div className="project-card">
+
+                <figure className="card-banner img-holder">
+                  <img src="/project-2.jpg" width="416" height="429" loading="lazy" alt="Graphic Design"
+                    className="img-cover"/>
+                </figure>
+
+                <div className="card-content">
+                  <h3 className="h3">
+                    <span className="card-title">Graphic Design</span>
+                  </h3>
+
+                  <a href="#" className="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
 
             <li>
               <div className="project-card">
 
                 <figure className="card-banner img-holder">
-                  <img src="/project-4.jpg" width="416" height="429" loading="lazy" alt="Web Design"
+                  <img src="/project-2.jpg" width="416" height="429" loading="lazy" alt="Graphic Design"
                     className="img-cover"/>
                 </figure>
 
                 <div className="card-content">
                   <h3 className="h3">
-                    <a href="#" className="card-title">Web Design</a>
-                  </h3>
-
-                  <a href="#" className="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div className="project-card">
-
-                <figure className="card-banner img-holder" >
-                  <img src="/project-5.jpg" width="416" height="429" loading="lazy"
-                    alt="Mobile App Design" className="img-cover"/>
-                </figure>
-
-                <div className="card-content">
-                  <h3 className="h3">
-                    <a href="#" className="card-title">Mobile App Design</a>
-                  </h3>
-
-                  <a href="#" className="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div className="project-card">
-
-                <figure className="card-banner img-holder" >
-                  <img src="/project-5.jpg" width="416" height="429" loading="lazy"
-                    alt="Mobile App Design" className="img-cover"/>
-                </figure>
-
-                <div className="card-content">
-                  <h3 className="h3">
-                    <a href="#" className="card-title">Mobile App Design</a>
+                    <span className="card-title">Graphic Design</span>
                   </h3>
 
                   <a href="#" className="card-tag">Design</a>
