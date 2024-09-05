@@ -527,14 +527,14 @@ body {
 
 .service-card,
 .service .link-card {
-  padding: 45px;
+  padding: 20px;
   border-radius: var(--radius-20);
 }
 
 .service-card {
   height: 100%;
   background-color: var(--white);
-  padding-block-end: 40px;
+  padding-block-end: 20px;
   border-block-end: 3px solid transparent;
   box-shadow: var(--shadow-3);
   transition: var(--transition-1);
@@ -545,7 +545,6 @@ body {
   padding: 15px;
   border-radius: var(--radius-8);
   background-color: hsla(var(--color), 0.15);
-  margin-block-end: 25px;
   transition: var(--transition-2);
 }
 
@@ -1587,10 +1586,6 @@ LOADER 3
   REVIEW SECTION
 */
 
-.review-section ul{
-  display: flex;
-  flex-direction: column;
-}
 
 @media (min-width: 575px) {
 
