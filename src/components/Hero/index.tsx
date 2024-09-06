@@ -16,7 +16,7 @@ export const Hero: FunctionComponent = ()=>{
             <p className="hero-text">
               At Pixology we specialize in designing, building, shipping and scaling beautiful, usable products with
               blazing-fast
-              
+              efficiency
             </p>
 
             <div className="wrapper">
@@ -25,7 +25,7 @@ export const Hero: FunctionComponent = ()=>{
               <button className="hero-btn" aria-label="pixology promo">
                 <span aria-hidden="true"></span>
 
-                <span className="span">Behind the s</span>
+                <span className="span">Behind the scenes</span>
               </button>
             </div>
 
