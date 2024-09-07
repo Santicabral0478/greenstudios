@@ -70,7 +70,7 @@ export const About: FunctionComponent = ()=>{
                     <h3 className="h3 card-title">24/7 hours support</h3>
 
                     <p className="card-text">
-                      At Pixology we specialize in designing, building, shipping and scaling
+                      At Pixology we specialize in designing, building, shipping and 
                     </p>
                   </div>
 
