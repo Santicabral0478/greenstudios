@@ -19,7 +19,7 @@ export const PostContactMail = async (formData: IFormData)=>{
         const statusMessage = await response.json();
         return statusMessage;
     } catch(err){
-        console.log(err);
+        console.log("error inesperado");
     }
     
 }

@@ -77,13 +77,11 @@ export const AboutTwo: FunctionComponent = ()=>{
 
     try{
       const responseForm = await PostContactMail(contentForm)
-      console.log(responseForm);
       showSuccess()
       setContentForm(initialValue)
       setIsLoadButton(false)
     } catch(err){
-      console.log(err);
-      
+      console.log("Error inesperado");
     }
   }
 
