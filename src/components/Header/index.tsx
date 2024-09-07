@@ -57,7 +57,10 @@ export const Header: FunctionComponent = ()=>{
         <header className={`header ${isOcc}`} data-header>
           <div className="container">
 
-            <a href="#" className="logo">Pixology</a>
+            <Link className="logo" href={"/"}>
+              <Image className="logo-width" height={200} width={200} alt="Logo Green Studios" src={"/logo-header.png"}></Image>
+              <Image className="logo-responsive" height={200} width={200} alt="Logo Green Studios" src={"/logo-responsive.png"}></Image>
+            </Link>
 
             <nav className={`navbar ${isActive}`} data-navbar>
 

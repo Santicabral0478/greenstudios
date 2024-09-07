@@ -370,6 +370,14 @@ body {
   font-weight: var(--fw-700);
 }
 
+.logo .logo-responsive{
+  width: 4rem;
+}
+
+.logo .logo-width{
+  display: none;
+}
+
 .nav-open-btn svg {
   width: 34px;
   fill: rgb(34, 34, 34);
@@ -1900,6 +1908,18 @@ LOADER 3
   .header .btn::after { background-color: var(--raisin-black-1); }
 
   .header .btn:is(:hover, :focus) { color: var(--white); }
+
+
+  
+.logo .logo-responsive{
+  display: none;
+}
+
+.logo .logo-width{
+  display: block;
+  width: 5rem;
+}
+
 
 
 
