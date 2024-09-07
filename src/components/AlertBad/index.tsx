@@ -16,7 +16,6 @@ const AlertBad = () => {
             </p><div className="error-prompt-wrap">
               <ul className="error-prompt-list" role="list">
                 <li>Password must be at least !8 characters</li>
-                <li>Password must include Elon's baby name</li>
               </ul>
           </div>
           </div>
