@@ -25,7 +25,6 @@ export const Reviews = ()=>{
             <li>
                  <CardReview/>
             </li>
-
           </ul>
 
         </div>
