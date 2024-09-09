@@ -1259,10 +1259,16 @@ LOADER 3
   align-items: center;
   gap: 2.5rem;
   margin-bottom: 10rem;
+  transition: all .3s ease;
+
 }
 
 .img-select-fase img{
-  width: 20rem;
+  width: 26rem;
+  background: #d6dde1;
+  padding: 5rem;
+  border-radius: 15px;
+  transition: all .3s ease;
 }
 
 .list-select{
@@ -1280,8 +1286,8 @@ LOADER 3
   background-color: #4d68793d;
   border-radius: 50%;
   font-size: 2.1rem;
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
 }
 
 .select-fase{
@@ -2104,6 +2110,17 @@ LOADER 3
     gap: 30px;
     align-items: center;
     justify-content: center;
+  }
+
+  .list-select button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d68793d;
+    border-radius: 50%;
+    font-size: 2.1rem;
+    width: 55px;
+    height: 55px;
   }
 
 
