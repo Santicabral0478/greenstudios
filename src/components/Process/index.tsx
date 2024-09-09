@@ -1,8 +1,14 @@
+"use client"
+import Image from "next/image"
+import { useState } from "react"
 
 
 export const Process = ()=>{
+    const [currentVisibility, setCurrentVisibility] = useState<number>(1)
 
     interface ITex {
+        id: number,
+        img: string,
         title: string,
         title1: string,
         description1: string[],
@@ -12,6 +18,8 @@ export const Process = ()=>{
 
     const textContent: ITex[] = [
         {
+            id: 1,
+            img: "/feature-1.png",
             title: "Introduccion",
             title1: "Presentacion Green Studios:",
             description1: ["Procesos", "Herramientas",],
@@ -19,6 +27,8 @@ export const Process = ()=>{
             description2: ["Introduccion al proyecto", "Preguntas", "Compromisos", "Brief"]
         },
         {
+            id: 2,
+            img: "/feature-2.png",
             title: "Fase inicial",
             title1: "Compromiso del cliente:",
             description1: ["Logos", "Manual grafico", "Accesos"],
@@ -26,16 +36,22 @@ export const Process = ()=>{
             description2: ["Diseño", "Mapa de navegacion"]
         },
         {
+            id: 3,
+            img: "/feature-3.png",
             title: "Desarrollo",
             title1: "Implementacion:",
             description1: ["Desarrollo", "QA", "Proceso", "seguimiento", "Registro de reuniones"],
         },
         {
+            id: 4,
+            img: "/feature-4.png",
             title: "QA cliente",
             title1: "QA de cliente:",
             description1: ["Documentacion de QA del cliente", "Estabilizacion",],
         },
         {
+            id: 5,
+            img: "/feature-5.png",
             title: "Entrega final",
             title1: "Entrega final",
             description1: ["Acta de entrega", "Manual de administracion", "Encuesta de satisfaccion"]
@@ -49,25 +65,33 @@ export const Process = ()=>{
         <div className="container container-feature">
 
           <div className="img-select-fase">
-            <img src="/feature-banner.png" width="582" height="585" loading="lazy" alt="feature banner"
-              className="w-100"/>
+            <div className="relative-img-container">
+                {
+                    textContent.map((item)=>(
+                        <Image 
+                            src={item.img} 
+                            height={400} 
+                            width={400} 
+                            alt={item.title} 
+                            className={`img-fase ${currentVisibility === item.id && "img-visible"}`}
+                        ></Image>
+                    ))
+                }
+            </div>
 
             <div className="list-select">
-                <button className="select-fase select-button-active">
-                    1
-                </button>
-                <button className="select-fase">
-                    2
-                </button>
-                <button className="select-fase">
-                    3
-                </button>
-                <button className="select-fase">
-                    4
-                </button>
-                <button className="select-fase">
-                    5
-                </button>
+                {
+                    textContent.map((item: ITex)=>(
+                        <button 
+                            className={`select-fase ${ currentVisibility === item.id && 'select-button-active' }`}
+                            onClick={()=>{
+                                setCurrentVisibility(item.id)
+                            }}
+                            >
+                            {item.id}
+                        </button>
+                    ))
+                }
             </div>
           </div>
 
@@ -75,9 +99,12 @@ export const Process = ()=>{
 
             <p className="section-subtitle has-before">Why Choose us</p>
 
-            {textContent.map((content)=>(
+            <div className="relative-list-container">
+            {textContent.map((content: ITex)=>(
                 <>
-                <ul className="feature-list">
+                <ul 
+                    className={`feature-list ${currentVisibility === content.id && 'active-list'}`}
+                    >
                 
                 <h2 className="h2">
                   {content.title}
@@ -120,6 +147,7 @@ export const Process = ()=>{
                 </>
             ))            
             }
+            </div>
 
 
           </div>

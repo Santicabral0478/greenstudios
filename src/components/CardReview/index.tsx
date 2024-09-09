@@ -4,12 +4,10 @@ import Image from "next/image";
 const CardReview = () => {
   return (
     <div className="card-review">
-      {/* Esquina superior derecha con número */}
       <div className="corner-box">
         <p className="corner-number">02</p>
       </div>
 
-      {/* Ícono */}
       <div className="icon-box">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
@@ -18,10 +16,8 @@ const CardReview = () => {
         </svg>
       </div>
 
-      {/* Título */}
       <h1 className="card-title">UI / UX Creative Design</h1>
 
-      {/* Descripción */}
       <p className="card-description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga
         adipisicing elit.
