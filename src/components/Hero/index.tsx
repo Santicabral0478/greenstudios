@@ -14,7 +14,7 @@ export const Hero: FunctionComponent = ()=>{
             </h1>
 
             <p className="hero-text">
-              At Pixology we specialize dfserfesr, nd dsdcsdng , le s wi
+              At Green Studios we specialize dfserfesr, nd dsdcsdng , le s wi
               blazing
               efficiency
             </p>
@@ -22,7 +22,7 @@ export const Hero: FunctionComponent = ()=>{
             <div className="wrapper">
               <a href="#" className="btn btn-primary has-before has-after">How It Works</a>
 
-              <button className="hero-btn" aria-label="pixology promo">
+              <button className="hero-btn" aria-label="Green Studios promo">
                 <span aria-hidden="true"></span>
 
                 <span className="span">Behind the jzsdhj</span>

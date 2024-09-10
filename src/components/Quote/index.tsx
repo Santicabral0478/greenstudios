@@ -38,7 +38,7 @@ export const Quote: FunctionComponent = ()=>{
                   </h3>
 
                   <p className="card-text">
-                    At Pixology we specialize in designing, building, shipping and scaling beautifu. At Pixology we
+                    At Green Studios we specialize in designing, building, shipping and scaling beautifu. At Green Studios we
                     specialize in designing,
                     building, shipping and scaling beautiful.
                   </p>

@@ -11,7 +11,7 @@ export const Reviews = ()=>{
           <p className="section-subtitle has-before text-center">Projects</p>
 
           <h2 className="h2 section-title text-center">
-            Pixology complete <span className="has-before">project</span>
+            Green Studios complete <span className="has-before">project</span>
           </h2>
 
 

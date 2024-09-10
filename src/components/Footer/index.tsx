@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FunctionComponent } from "react";
 
 export const Footer: FunctionComponent = ()=>{
@@ -11,7 +12,7 @@ export const Footer: FunctionComponent = ()=>{
   
           <div className="footer-brand">
   
-            <p className="footer-list-title">About Pixology</p>
+            <p className="footer-list-title">About Green Studios</p>
   
             <p className="footer-text">
               A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat. Exerci tationulla
@@ -212,7 +213,7 @@ export const Footer: FunctionComponent = ()=>{
         <div className="footer-bottom">
   
           <p className="copyright">
-            &copy; 2022 Pixology. All Rights Reserved by codewithsadee
+            &copy; 2024 Green Studios. All Rights Reserved 
           </p>
   
           <ul className="footer-bottom-list">
