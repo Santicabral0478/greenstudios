@@ -2137,9 +2137,10 @@ LOADER 3
 
   .navbar-list {
     display: flex;
-    gap: 30px;
-  }
-
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
   .navbar-link {
     position: relative;
     color: var(--cool-gray);
@@ -2216,7 +2217,7 @@ LOADER 3
   .feature .container {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    align-items: center;
+    align-items: start;
     justify-content: center;
   }
 

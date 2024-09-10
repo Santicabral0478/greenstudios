@@ -116,7 +116,15 @@ export const Header: FunctionComponent = ()=>{
                 {
                   linksNav.map((item: ILinks)=>(
                     <li className="navbar-item">
-                      <Link href={item.link} className="navbar-link" data-nav-link>{item.name}</Link>
+                      <Link 
+                      onClick={()=>{
+                        handleOnCloseSideNavbar()
+                      }} 
+                      href={item.link} 
+                      className="navbar-link" 
+                      data-nav-link>
+                        {item.name}
+                      </Link>
                     </li>
                   ))
                 }
