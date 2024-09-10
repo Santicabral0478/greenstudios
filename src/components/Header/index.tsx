@@ -6,9 +6,44 @@ import { FunctionComponent, useEffect, useRef, useState } from "react";
 export const Header: FunctionComponent = ()=>{
   const [isOcc, setIsOcc] : any = useState("");
   const [isActive, setIsActive]: any = useState("");
-
   const scrollTimeout: any = useRef(null);
   const lastScrollY = useRef(0);
+
+  interface ILinks {
+    name: string,
+    link: string    
+  }
+
+  const linksNav: ILinks[] = [
+    {
+      name: "Home",
+      link: "#"
+    },
+    {
+      name: "Servicios",
+      link: "#service"
+    },
+    {
+      name: "Nosotros",
+      link: "#about"
+    },
+    {
+      name: "Fortalezas",
+      link: "#strengths"
+    },
+    {
+      name: "Procesos",
+      link: "#process"
+    },
+    {
+      name: "Proyectos",
+      link: "#projects"
+    },
+    {
+      name: "Contacto",
+      link: "#contact"
+    },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,7 +100,9 @@ export const Header: FunctionComponent = ()=>{
             <nav className={`navbar ${isActive}`} data-navbar>
 
               <div className="wrapper">
-                <a href="#" className="logo">Pixology</a>
+                <Link href={"/"}>
+                  <Image className="logo-responsive-nav" height={300} width={300} src={"/logo-footer.png"} alt="Green Studios logo"></Image>
+                </Link>
 
                 <button onClick={()=>{
                   handleOnCloseSideNavbar()
@@ -76,25 +113,13 @@ export const Header: FunctionComponent = ()=>{
 
               <ul className="navbar-list">
 
-                <li className="navbar-item">
-                  <a href="#home" className="navbar-link" data-nav-link>Home</a>
-                </li>
-
-                <li className="navbar-item">
-                  <a href="#service" className="navbar-link" data-nav-link>Services</a>
-                </li>
-
-                <li className="navbar-item">
-                  <a href="#feature" className="navbar-link" data-nav-link>Features</a>
-                </li>
-
-                <li className="navbar-item">
-                  <a href="#project" className="navbar-link" data-nav-link>Portfolio</a>
-                </li>
-
-                <li className="navbar-item">
-                  <a href="#blog" className="navbar-link" data-nav-link>Blog</a>
-                </li>
+                {
+                  linksNav.map((item: ILinks)=>(
+                    <li className="navbar-item">
+                      <Link href={item.link} className="navbar-link" data-nav-link>{item.name}</Link>
+                    </li>
+                  ))
+                }
 
               </ul>
 

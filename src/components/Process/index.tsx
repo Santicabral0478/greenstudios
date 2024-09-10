@@ -62,6 +62,10 @@ export const Process = ()=>{
 
     return(
         <section className="section feature" id="feature" aria-label="feature">
+            <div className="container container-feature">
+                <p className="section-subtitle has-before">Why Choose us</p>
+            </div>
+            <br />
         <div className="container container-feature">
 
           <div className="img-select-fase">
@@ -97,7 +101,6 @@ export const Process = ()=>{
 
           <div className="feature-content">
 
-            <p className="section-subtitle has-before">Why Choose us</p>
 
             <div className="relative-list-container">
             {textContent.map((content: ITex)=>(

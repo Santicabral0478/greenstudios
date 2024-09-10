@@ -103,7 +103,6 @@ export const AboutTwo: FunctionComponent = ()=>{
 
           <div className="contact-form-cont-content">
 
-            <p className="section-subtitle has-before">Get every update</p>
             <br />
             <form onSubmit={handleOnSubmitForm} className="form">
 
