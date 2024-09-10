@@ -14,7 +14,7 @@ export const Hero: FunctionComponent = ()=>{
             </h1>
 
             <p className="hero-text">
-              At Pixology we specialize in designing, building, nd scaling , usable products wi
+              At Pixology we specialize in designing, building, nd scaling , le products wi
               blazing-fast
               efficiency
             </p>
