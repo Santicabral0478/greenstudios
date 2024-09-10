@@ -25,7 +25,7 @@ export const Hero: FunctionComponent = ()=>{
               <button className="hero-btn" aria-label="pixology promo">
                 <span aria-hidden="true"></span>
 
-                <span className="span">Behind the </span>
+                <span className="span">Behind the jzsdhj</span>
               </button>
             </div>
 
