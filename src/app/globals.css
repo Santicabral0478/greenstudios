@@ -223,7 +223,7 @@ body {
 .btn {
   max-width: max-content;
   font-weight: var(--fw-700);
-  height: 55px;
+  height: 45px;
   display: flex;
   align-items: center;
   padding-inline: 50px;
@@ -1213,6 +1213,25 @@ LOADER 3
   transition: all .3s ease-in;
 }
 
+.image-relative-about-container{
+  width: 100%;
+  position: relative;
+}
+
+.image-slider-about{
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all .4s ease;
+  z-index: -1;
+  opacity: 0;
+}
+
+.active-about-image{
+  z-index: 10;
+  opacity: 1;
+}
+
 .active-list{
   opacity: 1;
   z-index: 2;
@@ -2011,7 +2030,6 @@ LOADER 3
 
   .container { max-width: 720px; }
 
-  .btn { height: 60px; }
 
   .grid-list, .project-section ul { 
     grid-template-columns: repeat(2, 1fr); 
@@ -2419,7 +2437,9 @@ LOADER 3
 
   .header .container { padding-inline: 30px; }
 
-  .navbar-list { gap: 50px; }
+  .navbar-list {
+    gap: 25px;
+  }
 
 
 

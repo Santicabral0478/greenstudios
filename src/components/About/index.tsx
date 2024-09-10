@@ -1,10 +1,46 @@
-import { FunctionComponent } from "react"
+"use client"
+import Image from "next/image";
+import { FunctionComponent, useEffect, useState } from "react"
 
 export const About: FunctionComponent = ()=>{
 
+  interface IImagesAbout {
+    id: number,
+    url: string,
+  }
+  const [currentImage, setCurrentImage] = useState<number>(1)
+  const imagesAbout: IImagesAbout[] = [
+    {
+      id: 1,
+      url: "/about-1.png",
+    },
+    {
+      id: 2,
+      url: "/about-2.png",
+    },
+    {
+      id: 3,
+      url: "/about-3.png",
+    }
+  ]
+
+  useEffect(() => {
+    const setBucle = () => {
+      const interval = setInterval(() => {
+        setCurrentImage((prevImage) => {
+          const nextImage = prevImage + 1;
+          return nextImage > 3 ? 1 : nextImage;
+        });
+      }, 5500);
+  
+      return () => clearInterval(interval);
+    };
+  
+    setBucle();
+  }, []);
+
     return(
         
-
         <section className="section feature" id="about" aria-label="feature">
         <div className="container">
 
@@ -12,8 +48,14 @@ export const About: FunctionComponent = ()=>{
             <br />
             <br />
             <br />
-            <img src="/feature-banner.png" width="582" height="585" loading="lazy" alt="feature banner"
-              className="w-100"/>
+            <div className="image-relative-about-container">
+            {
+              imagesAbout.map((item: IImagesAbout)=>(
+              <Image src={item.url} width={582} height={582} loading="lazy" alt="Nosotros Green Studios"
+              className={`w-100 image-slider-about ${currentImage === item.id && 'active-about-image'}`}></Image>
+              ))
+            }
+            </div>
           </figure>
 
           <div className="feature-content">
