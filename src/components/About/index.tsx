@@ -5,10 +5,13 @@ export const About: FunctionComponent = ()=>{
     return(
         
 
-        <section className="section feature" id="feature" aria-label="feature">
+        <section className="section feature" id="about" aria-label="feature">
         <div className="container">
 
           <figure className="feature-banner">
+            <br />
+            <br />
+            <br />
             <img src="/feature-banner.png" width="582" height="585" loading="lazy" alt="feature banner"
               className="w-100"/>
           </figure>
@@ -21,14 +24,10 @@ export const About: FunctionComponent = ()=>{
               Specialist in aviding clients of financial <span className="has-before">challenges</span>
             </h2>
 
-            <ul className="feature-list">
+            <ul className="feature-list-d">
 
               <li>
                 <div className="feature-card">
-
-                  <div className="card-icon" >
-                    <span aria-hidden="true"></span>
-                  </div>
 
                   <div>
                     <h3 className="h3 card-title">Fast working process</h3>
@@ -44,10 +43,6 @@ export const About: FunctionComponent = ()=>{
               <li>
                 <div className="feature-card">
 
-                  <div className="card-icon" >
-                    <span aria-hidden="true"></span>
-                  </div>
-
                   <div>
                     <h3 className="h3 card-title">Didicated team</h3>
 
@@ -61,10 +56,6 @@ export const About: FunctionComponent = ()=>{
 
               <li>
                 <div className="feature-card">
-
-                  <div className="card-icon">
-                    <span aria-hidden="true"></span>
-                  </div>
 
                   <div>
                     <h3 className="h3 card-title">24/7 hours support</h3>

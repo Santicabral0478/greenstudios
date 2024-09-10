@@ -3,7 +3,7 @@ import { FunctionComponent } from "react"
 export const Proyects: FunctionComponent = ()=>{
 
     return(
-        <section className="section project" id="project" aria-label="project">
+        <section className="section project" id="projects" aria-label="project">
         <div className="container project-section">
 
           <p className="section-subtitle has-before text-center">Projects</p>

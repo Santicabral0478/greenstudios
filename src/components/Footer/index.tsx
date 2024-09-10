@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FunctionComponent } from "react";
 
@@ -12,7 +13,7 @@ export const Footer: FunctionComponent = ()=>{
   
           <div className="footer-brand">
   
-            <p className="footer-list-title">About Green Studios</p>
+            <Image src={"/logo-responsive.png"} alt="Logo Green Studios" width={300} height={300} ></Image>
   
             <p className="footer-text">
               A new way to make the payments easy, reliable and 100. se quat.j,dhbsdh Exerci tationulla
@@ -215,22 +216,6 @@ export const Footer: FunctionComponent = ()=>{
           <p className="copyright">
             &copy; 2024 Green Studios. All Rights Reserved 
           </p>
-  
-          <ul className="footer-bottom-list">
-  
-            <li>
-              <a href="#" className="footer-bottom-link">Terms and conditions</a>
-            </li>
-  
-            <li>
-              <a href="#" className="footer-bottom-link">Privacy policy</a>
-            </li>
-  
-            <li>
-              <a href="#" className="footer-bottom-link">Login / Signup</a>
-            </li>
-  
-          </ul>
   
         </div>
   

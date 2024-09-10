@@ -5,7 +5,7 @@ import CardReview from "../CardReview";
 export const Reviews = ()=>{
 
     return(
-        <section className="section project" id="project" aria-label="project">
+        <section className="section project" id="strengths" aria-label="project">
         <div className="container review-section">
 
           <p className="section-subtitle has-before text-center">Projects</p>

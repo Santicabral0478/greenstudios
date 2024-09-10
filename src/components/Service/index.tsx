@@ -2,6 +2,35 @@
 import { FunctionComponent, useState } from "react";
 
 export const Service: FunctionComponent = ()=>{
+
+  interface IService {
+    img: string,
+    title: string,
+    text: string
+  }
+
+  const serviceContent: IService[] = [
+    {
+      img: "/service-icon-1.png",
+      title: "servicio1",
+      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facere libero suscipit sequi id possimus, nulla officiis"
+    },
+    {
+      img: "/service-icon-2.png",
+      title: "servicio2",
+      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facere libero suscipit sequi id possimus, nulla officiis"
+    },
+    {
+      img: "/service-icon-3.png",
+      title: "servicio3",
+      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facere libero suscipit sequi id possimus, nulla officiis"
+    },
+    {
+      img: "/service-icon-4.png",
+      title: "servicio4",
+      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facere libero suscipit sequi id possimus, nulla officiis"
+    }
+  ]
     
     return(
 
@@ -15,67 +44,26 @@ export const Service: FunctionComponent = ()=>{
 
             <ul className="grid-list">
 
-            <li>
-              <div className="service-card" >
-
-                <div className="card-icon">
-                  <img src="/service-icon-1.png" width="30" height="30" loading="lazy"
-                    alt="service icon"/>
-                </div>
-
-                <h3 className="h3">
-                  <a href="#" className="card-title">Product Management</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div className="service-card">
-
-                <div className="card-icon">
-                  <img src="/service-icon-2.png" width="30" height="30" loading="lazy"
-                    alt="service icon"/>
-                </div>
-
-                <h3 className="h3">
-                  <a href="#" className="card-title">Web & Mobile Development</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div className="service-card">
-
-                <div className="card-icon">
-                  <img src="/service-icon-3.png" width="30" height="30" loading="lazy"
-                    alt="service icon"/>
-                </div>
-
-                <h3 className="h3">
-                  <a href="#" className="card-title">Fast Customer Support</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div className="service-card">
-
-                <div className="card-icon">
-                  <img src="/service-icon-4.png" width="30" height="30" loading="lazy"
-                    alt="service icon"/>
-                </div>
-
-                <h3 className="h3">
-                  Human Resources
-                </h3>
-
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facere libero suscipit sequi id possimus, nulla officiis quisquam ex nisi consequuntur et officia provident aliquid magnam consectetur iste delectus inventore.</p>
-
-              </div>
-            </li>
+              {
+                serviceContent.map((item)=>(
+                  <li>
+                    <div className="service-card">
+    
+                      <div className="card-icon">
+                        <img src={item.img} width="30" height="30" loading="lazy"
+                          alt="service icon"/>
+                      </div>
+    
+                      <h3 className="h3">
+                        {item.title}
+                      </h3>
+    
+                      <p>{item.text}</p>
+                
+                    </div>
+                  </li>
+                ))
+              }
 
             </ul>
 

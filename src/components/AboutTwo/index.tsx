@@ -93,7 +93,7 @@ export const AboutTwo: FunctionComponent = ()=>{
   }
 
     return(
-      <section className="section contact-form-cont has-bg-image pattern-element" aria-label="contact-form-cont">
+      <section className="section contact-form-cont has-bg-image pattern-element" id="contact" aria-label="contact-form-cont">
         <div className="container">
 
           <figure className="contact-form-cont-banner">

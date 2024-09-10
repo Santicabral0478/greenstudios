@@ -61,7 +61,7 @@ export const Process = ()=>{
 
 
     return(
-        <section className="section feature" id="feature" aria-label="feature">
+        <section className="section feature" id="process" aria-label="feature">
             <div className="container container-feature">
                 <p className="section-subtitle has-before">Why Choose us</p>
             </div>
