@@ -15,7 +15,7 @@ export const Footer: FunctionComponent = ()=>{
             <p className="footer-list-title">About Green Studios</p>
   
             <p className="footer-text">
-              A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat. Exerci tationulla
+              A new way to make the payments easy, reliable and 100. claritatem itamconse quat. Exerci tationulla
             </p>
   
             <ul className="social-list">
