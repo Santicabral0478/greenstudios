@@ -10,7 +10,7 @@ export const Hero: FunctionComponent = ()=>{
           <div className="hero-content">
 
             <h1 className="h1 hero-title">
-              Building Digital <span className="has-before">Product</span>, Brand and Experience
+              Building Digital <span className="has-before">Product</span>, Brand and csljhfbsdj
             </h1>
 
             <p className="hero-text">
