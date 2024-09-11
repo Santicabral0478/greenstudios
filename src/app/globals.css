@@ -19,7 +19,7 @@
   --raisin-black-2: hsl(240, 8%, 12%);
   --majorelle-blue: rgb(64, 75, 89);
   --blue-ryb_80: hsla(217, 88%, 60%, 0.8);
-  --bittersweet: hsl(8, 90%, 67%);
+  --bittersweet: hsl(8, 47%, 52%);
   --eerie-black: hsl(0, 0%, 13%);
   --ghost-white: hsl(230, 60%, 98%);
   --light-gray: hsl(0, 0%, 80%);
@@ -1159,6 +1159,12 @@ LOADER 3
   display: grid;
 }
 
+.feature-banner{
+  height: 42rem;
+  width: 33rem;
+  margin-inline: auto;
+}
+
 .feature-content{
   position: relative;
   margin-top: 2rem;
@@ -1428,7 +1434,14 @@ LOADER 3
 
 .project-card .card-tag {
   color: var(--raisin-black-1);
-  font-size: var(--fs-9);
+  border: 1px solid #1c2634;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.project-card .card-tag:hover {
+  background-color: var(--raisin-black-1);
+  color: #fff;
 }
 
 .project-card:is(:hover, :focus-within) .card-content {
@@ -2018,7 +2031,7 @@ LOADER 3
      * spacing
      */
 
-    --section-padding: 120px;
+    --section-padding: 60px;
 
   }
 
@@ -2078,10 +2091,6 @@ LOADER 3
   /**
    * FEATURE
    */
-
-   .feature-banner {
-    max-width: 500px;
-  }
 
   .feature-list { gap: 30px; }
 
@@ -2155,6 +2164,24 @@ LOADER 3
  */
 
 @media (min-width: 992px) {
+
+    :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 5.5rem;
+    --fs-2: 3.8rem;
+    --fs-7: 1.8rem;
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 80px;
+
+  }
 
   /**
    * REUSED STYLE
@@ -2414,7 +2441,12 @@ LOADER 3
     --fs-1: 5.5rem;
     --fs-2: 4.5rem;
 
+    --section-padding: 100px;
+
+    
   }
+
+  
 
 
 
@@ -2481,23 +2513,13 @@ LOADER 3
 
 
   /**
-   * BLOG
+   * FEATURE
    */
 
-  .blog-list { column-gap: 35px; }
-
-  .blog-card.large {
-    padding-inline-end: 35px;
-    border-inline-end: 1px solid var(--gainsboro);
-  }
-
-  .blog-card:not(.large) .publish-date { --fs-9: 1.6rem; }
-
-  .blog-card:not(.large) .wrapper {
-    gap: 25px;
-    margin-block-end: 20px;
-  }
-
-  .blog-card .card-title { --fs-4: 2.4rem; }
+   .feature-banner{
+    height: 53rem;
+    width: 43rem;
+    margin-inline: auto;
+   }
 
 }

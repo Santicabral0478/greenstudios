@@ -10,36 +10,44 @@ export const Header: FunctionComponent = ()=>{
   const lastScrollY = useRef(0);
 
   interface ILinks {
+    id: number,
     name: string,
     link: string    
   }
 
   const linksNav: ILinks[] = [
     {
+      id: 1,
       name: "Home",
       link: "#"
     },
     {
+      id: 2,
       name: "Servicios",
       link: "#service"
     },
     {
+      id: 3,
       name: "Nosotros",
       link: "#about"
     },
     {
+      id: 4,
       name: "Fortalezas",
       link: "#strengths"
     },
     {
+      id: 5,
       name: "Procesos",
       link: "#process"
     },
     {
+      id: 6,
       name: "Proyectos",
       link: "#projects"
     },
     {
+      id: 7,
       name: "Contacto",
       link: "#contact"
     },
@@ -123,7 +131,7 @@ export const Header: FunctionComponent = ()=>{
 
                 {
                   linksNav.map((item: ILinks)=>(
-                    <li className="navbar-item">
+                    <li key={item.id} className="navbar-item">
                       <Link 
                       onClick={()=>{
                         handleOnCloseSideNavbar()

@@ -73,6 +73,7 @@ export const Process = ()=>{
                 {
                     textContent.map((item)=>(
                         <Image 
+                            key={item.id}
                             src={item.img} 
                             height={400} 
                             width={400} 
@@ -87,6 +88,7 @@ export const Process = ()=>{
                 {
                     textContent.map((item: ITex)=>(
                         <button 
+                            key={item.id}
                             className={`select-fase ${ currentVisibility === item.id && 'select-button-active' }`}
                             onClick={()=>{
                                 setCurrentVisibility(item.id)
@@ -106,6 +108,7 @@ export const Process = ()=>{
             {textContent.map((content: ITex)=>(
                 <>
                 <ul 
+                    key={content.id}
                     className={`feature-list ${currentVisibility === content.id && 'active-list'}`}
                     >
                 
@@ -121,7 +124,7 @@ export const Process = ()=>{
                 
                         {
                             content.description1.map((description)=>(
-                                <p className="card-text">
+                                <p key={content.id} className="card-text">
                                     {description}
                                 </p>
                             ))
@@ -136,7 +139,7 @@ export const Process = ()=>{
                         {   
                             content.description2 &&
                             content.description2.map((description)=>(
-                                <p className="card-text">
+                                <p key={content.id} className="card-text">
                                     {description}
                                 </p>
                             ))

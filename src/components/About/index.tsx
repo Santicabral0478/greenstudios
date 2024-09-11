@@ -51,7 +51,7 @@ export const About: FunctionComponent = ()=>{
             <div className="image-relative-about-container">
             {
               imagesAbout.map((item: IImagesAbout)=>(
-              <Image src={item.url} width={582} height={582} loading="lazy" alt="Nosotros Green Studios"
+              <Image key={item.id} src={item.url} width={582} height={582} loading="lazy" alt="Nosotros Green Studios"
               className={`w-100 image-slider-about ${currentImage === item.id && 'active-about-image'}`}></Image>
               ))
             }
