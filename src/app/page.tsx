@@ -7,8 +7,8 @@ import Process from "@/components/Process";
 import Proyects from "@/components/Proyects";
 import Quote from "@/components/Quote";
 import Reviews from "@/components/Reviews";
+import ReviewsTwo from "@/components/ReviewsTwo";
 import { Service } from "@/components/Service";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
       <About/>
       <Reviews/>
       <Process/>
+      <ReviewsTwo/>
       <Proyects/>
       <AboutTwo/>
     </>
