@@ -26,7 +26,7 @@ export const ReviewsTwo = ()=>{
       id: 2,
       stars: 5,
       company: "microsoft",
-      review: "Lorem ipsum dolor sit amet , molestiae int khbdlor sit amet , molestiae quas yd3 34lor sit amet , molestiae quas velrepudiandae consequuntur.",
+      review: "Lorem ipsum dolor sit amet , molestiae int khbdlor sit amet , molestiae quas yd3 olestiae quas velrepudiandae consequuntur.",
       img: "/about-2.png",
       position: "coo microsoft",
     },
