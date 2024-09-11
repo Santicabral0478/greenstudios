@@ -18,7 +18,7 @@ export const ReviewsTwo = ()=>{
       id: 1,
       stars: 3,
       company: "apple",
-      review: "Lorem ipsum dolor sit amet consectetur ingt. vkjdfkd  moldgsdfglitia, molestiae quas vel sint commodi repudiandae consequuntur.",
+      review: "Lorem ipsum dolor sit amet consectetur ingt. vkjdfkd  moldgsdfglitia, molestiae quas jsbddjsht commodi repudiandae consequuntur.",
       img: "/about-1.png",
       position: "co funder",
     },
