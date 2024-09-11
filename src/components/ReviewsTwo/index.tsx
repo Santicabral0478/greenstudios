@@ -34,7 +34,7 @@ export const ReviewsTwo = ()=>{
       id: 3,
       stars: 4,
       company: "samsumg",
-      review: "Lorem  sint commodi  dolor sit amet , iy45fhbe quas vel  dolor sit amet , molestiae quas velrepudiandae consequuntur.",
+      review: "Lorem  sint commodi  dolor sit amet , iy45fhbe quas vel  dolor sit amet , molestiae quas ghfgnfg43 consequuntur.",
       img: "/about-3.png",
       position: "founder",
     }
