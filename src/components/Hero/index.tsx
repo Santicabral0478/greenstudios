@@ -14,7 +14,7 @@ export const Hero: FunctionComponent = ()=>{
             </h1>
 
             <p className="hero-text">
-              Diseñamos y desarrollamos aplicaciones web de. Lleva tu empresa al futuro con digitales personalizadas para cada desafío            
+              Diseñamos y desarrollamos aplicaciones web de. Lleva tu empresa al futuro con ikuhvfuh personalizadas para cada desafío            
             </p>
 
             <div className="wrapper">
