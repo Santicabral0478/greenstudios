@@ -18,7 +18,7 @@ export const Header: FunctionComponent = ()=>{
   const linksNav: ILinks[] = [
     {
       id: 1,
-      name: "Home",
+      name: "Inicio",
       link: "#"
     },
     {

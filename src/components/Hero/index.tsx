@@ -10,13 +10,11 @@ export const Hero: FunctionComponent = ()=>{
           <div className="hero-content">
 
             <h1 className="h1 hero-title">
-              Building Digital <span className="has-before">Product</span>, oinjdjns and csljhfbsdj
+              Creamos soluciones de <span className="has-before">software </span> que potencian tu negocio.
             </h1>
 
             <p className="hero-text">
-              At Green Studios we specialize dfserfesr, nd dsdcsdng , le s wi
-              blazing
-              efficiency
+              Diseñamos y desarrollamos aplicaciones web y productos de software a medida, enfocados en eficiencia, innovación y resultados. Lleva tu empresa al futuro con herramientas digitales personalizadas para cada desafío            
             </p>
 
             <div className="wrapper">
