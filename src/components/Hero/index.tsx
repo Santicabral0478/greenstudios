@@ -10,7 +10,7 @@ export const Hero: FunctionComponent = ()=>{
           <div className="hero-content">
 
             <h1 className="h1 hero-title">
-              Creamos soluciones de <span className="has-before">software </span> que potencian tu gjygusygio.
+              Creamos soluciones de <span className="has-before">software </span> quen tu gjygusygio.
             </h1>
 
             <p className="hero-text">
