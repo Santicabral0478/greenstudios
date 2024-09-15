@@ -80,11 +80,11 @@ export const Footer: FunctionComponent = ()=>{
           <ul className="footer-list">
   
             <li>
-              <p className="footer-list-title">Community</p>
+              <p className="footer-list-title"></p>
             </li>
   
             <li>
-              <a href="#" className="footer-link">Help Center</a>
+              <a href="#" className="footer-link"></a>
             </li>
   
             <li>
