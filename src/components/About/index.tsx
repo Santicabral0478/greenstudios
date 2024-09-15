@@ -60,10 +60,10 @@ export const About: FunctionComponent = ()=>{
 
           <div className="feature-content">
 
-            <p className="section-subtitle has-before">Why Choose us</p>
+            <p className="section-subtitle has-before">Sobre nosotros</p>
 
             <h2 className="h2 section-title">
-              Specialist in aviding clients of financial <span className="has-before">challenges</span>
+              Por que elegir a <span className="has-before">Green Studios</span>
             </h2>
 
             <ul className="feature-list-d">
@@ -72,10 +72,10 @@ export const About: FunctionComponent = ()=>{
                 <div className="feature-card">
 
                   <div>
-                    <h3 className="h3 card-title">Fast working process</h3>
+                    <h3 className="h3 card-title"><b>1.</b> Compromiso con la Satisfacción del Cliente</h3>
 
                     <p className="card-text">
-                      At Green Studios we specialize in designing, building, shipping and scaling beautifu.
+                      En Green Studios, priorizamos tus necesidades y trabajamos estrechamente contigo para superar tus expectativas.
                     </p>
                   </div>
 
@@ -86,10 +86,10 @@ export const About: FunctionComponent = ()=>{
                 <div className="feature-card">
 
                   <div>
-                    <h3 className="h3 card-title">Didicated team</h3>
+                    <h3 className="h3 card-title"><b>2.</b> Innovación con Nuevas Tecnologías</h3>
 
                     <p className="card-text">
-                      At Green Studios we specialize in designing, building, shipping and scaling beautifu.
+                      Utilizamos inteligencia artificial y las últimas herramientas para ofrecer productos innovadores y eficientes.
                     </p>
                   </div>
 
@@ -100,10 +100,10 @@ export const About: FunctionComponent = ()=>{
                 <div className="feature-card">
 
                   <div>
-                    <h3 className="h3 card-title">24/7 hours support</h3>
+                    <h3 className="h3 card-title"><b>3.</b> Tecnologías Modernas y Efectivas</h3>
 
                     <p className="card-text">
-                      At Green Studios we specialize in designing, building, 
+                      Aplicamos las tecnologías más avanzadas para asegurar que tus proyectos sean rápidos, seguros e innovadores. 
                     </p>
                   </div>
 

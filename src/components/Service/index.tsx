@@ -14,38 +14,38 @@ export const Service: FunctionComponent = ()=>{
     {
       id: 1,
       img: "/service-icon-1.png",
-      title: "servicio1",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facere libero suscipit sequi id possimus, nulla officiis"
+      title: "Desarrollo de Aplicaciones Web",
+      text: "Creamos aplicaciones web personalizadas para mejorar la eficiencia y la experiencia del usuario, adaptadas a tus necesidades y objetivos."
     },
     {
       id: 2,
       img: "/service-icon-2.png",
-      title: "servicio2",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facere libero suscipit sequi id possimus, nulla officiis"
+      title: "Diseño de Sitios Web",
+      text: "Diseñamos sitios web atractivos y funcionales que capturan la esencia de tu marca y optimizan la experiencia de navegación."
     },
     {
       id: 3,
       img: "/service-icon-3.png",
-      title: "servicio3",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facere libero suscipit sequi id possimus, nulla officiis"
+      title: "Soporte y Mantenimiento",
+      text: "Ofrecemos soporte continuo y mantenimiento para asegurar que tu plataforma funcione sin problemas y se mantenga actualizada."
     },
     {
       id: 4,
       img: "/service-icon-4.png",
-      title: "servicio4",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facere libero suscipit sequi id possimus, nulla officiis"
+      title: "Consultoría Personalizada",
+      text: "Brindamos asesoría personalizada para ayudarte a desarrollar y optimizar tus proyectos digitales, adaptándonos a tus necesidades específicas."
     }
   ]
-    
+  
+
     return(
 
         <section className="section service" id="service" aria-label="service">
         <div className="container">
 
-          <p className="section-subtitle has-before text-center">Our Services</p>
+          <p className="section-subtitle has-before text-center">Nuestros Servicios</p>
 
-          <h2 className="h2 section-title text-center">Managing you business with our <span className="has-before">best
-              service</span></h2>
+          <h2 className="h2 section-title text-center">Servicios Digitales <span className="has-before">Personalizados</span></h2>
 
             <ul className="grid-list">
 
