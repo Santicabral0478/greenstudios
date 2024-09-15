@@ -80,27 +80,27 @@ export const Footer: FunctionComponent = ()=>{
           <ul className="footer-list">
   
             <li>
-              <p className="footer-list-title">Footer</p>
+              <p className="footer-list-title">Example</p>
             </li>
   
             <li>
-              <a href="#" className="footer-link"></a>
+              <a href="#" className="footer-link">Example</a>
             </li>
   
             <li>
-              <a href="#" className="footer-link">Example text</a>
+              <a href="#" className="footer-link">Example</a>
             </li>
   
             <li>
-              <a href="#" className="footer-link">Pert</a>
+              <a href="#" className="footer-link">Example</a>
             </li>
   
             <li>
-              <a href="#" className="footer-link">idbdj</a>
+              <a href="#" className="footer-link">Example</a>
             </li>
   
             <li>
-              <a href="#" className="footer-link">Footer-</a>
+              <a href="#" className="footer-link">Example</a>
             </li>
   
           </ul>
