@@ -80,7 +80,7 @@ export const Footer: FunctionComponent = ()=>{
           <ul className="footer-list">
   
             <li>
-              <p className="footer-list-title"></p>
+              <p className="footer-list-title">Footer</p>
             </li>
   
             <li>
