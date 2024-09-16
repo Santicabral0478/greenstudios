@@ -52,7 +52,7 @@ export const Footer: FunctionComponent = ()=>{
           <ul className="footer-list">
   
             <li>
-              <p className="footer-list-title">Usefull Links</p>
+              <p className="footer-list-title">Usefull</p>
             </li>
   
             <li>
