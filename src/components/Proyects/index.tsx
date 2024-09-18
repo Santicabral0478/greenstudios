@@ -75,7 +75,7 @@ export const Proyects: FunctionComponent = ()=>{
           <p className="section-subtitle has-before text-center">Projects</p>
 
           <h2 className="h2 section-title text-center">
-            Green Studios complete <span className="has-before">khdvbdfhb</span>
+            Green <span className="has-before">khdvbdfhb</span>
           </h2>
 
 
