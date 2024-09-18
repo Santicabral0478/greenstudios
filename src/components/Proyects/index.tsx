@@ -72,7 +72,7 @@ export const Proyects: FunctionComponent = ()=>{
         <section className="section project" id="projects" aria-label="project">
         <div className="container project-section">
 
-          <p className="section-subtitle has-before text-center">akjsdhfs</p>
+          <p className="section-subtitle has-before text-center">jdfhsj lorem </p>
 
           <h2 className="h2 section-title text-center">
             Green <span className="has-before">khdvbdfhb</span>
