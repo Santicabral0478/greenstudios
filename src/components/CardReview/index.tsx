@@ -19,7 +19,7 @@ const CardReview = () => {
       <h1 className="card-title">UI / UX Creative </h1>
 
       <p className="card-description">
-        Lorem ipsum dolor sit amet consectetur elit. 
+        Lorem ipsum dolor sit elit. 
         
       </p>
     </div>
