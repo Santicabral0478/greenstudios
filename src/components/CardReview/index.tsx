@@ -19,8 +19,8 @@ const CardReview = () => {
       <h1 className="card-title">UI / UX Creative Design</h1>
 
       <p className="card-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga
-        adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur elit. Esse fuga
+        
       </p>
     </div>
   );
