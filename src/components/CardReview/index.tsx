@@ -16,7 +16,7 @@ const CardReview = () => {
         </svg>
       </div>
 
-      <h1 className="card-title">UI / UX Creative Design</h1>
+      <h1 className="card-title">UI / UX Creative </h1>
 
       <p className="card-description">
         Lorem ipsum dolor sit amet consectetur elit. 
